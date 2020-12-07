@@ -1,0 +1,121 @@
+\documentclass[12pt]{report}
+\usepackage[table]{xcolor}
+\setlength\parindent{0pt}% indent width
+\usepackage[utf8]{inputenc} %paquete que permite colocar acentos
+%\usepackage[T1]{fontenc}
+%\usepackage{helvet} 
+%\usepackage{lmodern}
+%\usepackage{tgbonum}
+\usepackage{libertinus} %megusta
+%\usepackage{times}
+%\usepackage[sfdefault,lining]{FiraSans} %% option 'sfdefault' activates Fira Sans as the default text font
+
+%\usepackage{fouriernc}
+%\usepackage[light]{CrimsonPro}
+%\renewcommand{\familydefault}{\sfdefault} % Fuente en Arial
+\usepackage{mathpazo}
+\definecolor{greenn}{HTML}{008000}
+\definecolor{brightmaroon}{rgb}{0.76, 0.13, 0.28}
+\usepackage{hyperref}
+\usepackage{dirtytalk}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=greenn,
+    filecolor=magenta,      
+    urlcolor=blue,
+    citecolor=brightmaroon
+}
+\usepackage[english]{babel} 
+\usepackage{textgreek}
+\usepackage{upgreek}
+\usepackage{etoolbox}
+\usepackage{amsmath}
+\usepackage[customcolors,shade]{hf-tikz}
+\usepackage{empheq}
+\usepackage{tablefootnote}
+\usepackage{dcolumn,tabularx,ragged2e}
+\usepackage{breqn}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{float}
+\usepackage{grffile}
+\usepackage{tabularx}
+\usepackage{siunitx}
+\usepackage{amssymb}
+\usepackage{lineno}
+\usepackage{physics}
+\usepackage{multirow}
+\usepackage{subfigure} 
+\usepackage{color}
+\usepackage{xfrac}
+\usepackage{multicol}
+%\usepackage{titleps}
+\usepackage{lipsum}
+\usepackage{cancel}
+\usepackage{sectsty}
+\font\myfont=cmr12 at 90pt
+\usepackage{enumerate}
+\numberwithin{equation}{chapter}
+\usepackage[nottoc]{tocbibind}
+\usepackage{titletoc}
+\titlecontents{chapter}% <section-type>
+  [0pt]% <left>
+  {}% <above-code>
+  {\bfseries\chaptername\ \thecontentslabel\quad}% <numbered-entry-format>
+  {}% <numberless-entry-format>
+  {\bfseries\hfill\contentspage}% <filler-page-format>
+\setcounter{tocdepth}{1}
+
+%\usepackage{minted}
+
+%\chaptertitlefont{\Huge}
+
+\usepackage{titlesec}
+%\titleformat*{\section}{\Huge\bfseries}
+%\titleformat{\chapter}{\Huge\bfseries}
+%\titleformat*{\subsection}{\Large\bfseries}
+
+%\usepackage[margin=0.8cm]{caption}
+
+\usepackage[table]{xcolor}
+\usepackage{xcolor,colortbl}
+
+\newcommand\crule[3][black]{\textcolor{#1}{\rule{#2}{#3}}}
+\newcommand{\vect}[1]{\boldsymbol{#1}}
+
+\newcommand{\subf}[2]{%
+  {\small\begin{tabular}[t]{@{}c@{}}
+  #1\\#2
+  \end{tabular}}%
+}
+
+%\renewpagestyle{plain}{%
+%\sethead{}{}{}
+%\setfoot{}{\thepage}{}
+%}%
+
+%\pagestyle{plain}
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}%tamaño márgenes
+\usepackage{lmodern}
+%\usepackage{mathptmx} %aguanta
+%\usepackage{mbtimes}
+%\usepackage{mathtime}
+%\usepackage{txfonts}
+%\usepackage[math]{iwona}
+%\usepackage{mathpple}
+%\usepackage{newpxtext,newpxmath}
+%\usepackage{times}
+\renewcommand{\baselinestretch}{1} %interlineado
+\usepackage[small]{caption}  
+\usepackage[tablename=Table]{caption}
+\usepackage[labelfont=bf]{caption}
+\usepackage[figurename=Figure]{caption}%Nombre de las figuras o tablas
+%\usepackage{subcaption}
+
+\definecolor{forestgreen}{rgb}{0.0, 0.67, 0.13}
+\definecolor{amber(sae/ece)}{rgb}{1.0, 0.49, 0.0}
+\definecolor{cadmiumorange}{rgb}{1.0, 0.53, 0.3}
+\definecolor{morado}{rgb}{0.7, 0.4, 1.0}
+\definecolor{black}{rgb}{0.0, 0.0, 0.0}

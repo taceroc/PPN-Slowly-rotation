@@ -1,0 +1,549 @@
+\chapter{Linearized gravity } \label{ch: firstchapter} %Title of the First Chapter \
+%\section{Signature}
+%$(-+++)$
+
+\section{Weak fields}
+The Einstein field equations are not linear. The physical reason is that the gravitational field of a body contains energy, therefore a mass and because of general relativity, creates a gravitational field; in conclusion, the field itself is in part, its own source and a feedback effect is created. The analysis of the gravitational field produced by many bodies is not the sum of the field produce by each body. If the body produces a weak gravitational field, the feedback effect can be ignored, and it is possible to make the Einstein field equations linear and easy to solve \cite{Adler}.\\
+
+The strong gravitational field, such as the produced by black holes, is the one considered by the Einstein field equations. Nevertheless, the gravitational field produced by stars like the Sun, neutron stars and other astrophyisical objects are weak \cite{GravityPoisson}. This characteristic allow us the study of the Einstein field equations and other relevant expressions for the general relativity as approximations. These expressions may describe the behavior of Newtonian gravity by imposing an asymptotic limit. When the consideration of the field is made, it is possible to linearize the field equations by means of introducing a perturbation to the metric Minkowski tensor \cite{Larranaga}. \\
+
+Furthermore, most of the physic systems can be modeled as perfect fluids. An observer moving with the same velocity as the system (or fluid), sees this one as isotropic; it is said that the fluid can be described by its mass density and its isotropic pressure. On a perfect fluid, there is no shear stress. By means of the energy-momentum tensor $T_{\mu\nu}$, suppose the fluid is at some space-time point, the energy-momentum tensor in the observer's frame of reference can be written as
+
+ \begin{align}
+        \Tilde{T}^{ij}&=p\delta_{ij}\\
+        \Tilde{T}^{i0}&=\Tilde{T}^{0j}=0\\
+        \Tilde{T}^{00}&=\rho,
+        \label{eq: Tperfectfluid}
+    \end{align}
+    
+where $p$ is the pressure  \cite{Weinberg}.\\
+
+Now suppose that the observer is in a reference frame at rest, by means of Lorentz transformation, the energy momentum tensor is \cite{Weinberg}
+
+ \begin{align}
+        T^{\,\alpha\beta}&= \Lambda^\alpha_\gamma(\vec{v}) \Lambda^\beta_\delta(\vec{v}) \Tilde{T}^{\,\gamma\delta} \\
+        T^{\,\alpha\beta}&= p\eta^{\alpha\beta}+(p+\rho)U^{\alpha}U^{\beta}  
+    \end{align}
+    
+The four-velocity can be written as 
+ \begin{align}
+        U^{\alpha} = \gamma(c, \textbf{v})
+    \end{align}
+ With $|\textbf{v}| << c$, the velocity of the gravitational source and $\gamma = \left(1-\frac{v^2}{c^2}\right)^{-1/2}$\\
+    
+The systems are considered to be composed of particles moving at small velocities. Therefore, these are non-interacting particles, they are in rest with respect to each other. A small velocity means zero pressure for a perfect fluid. In terms of the energy momentum tensor,
+
+ \begin{align}
+        T^{\,\alpha\beta}&= \rho_0U^{\alpha}U^{\beta},
+        \label{eq:Tincoherentmatter}
+    \end{align}
+ where $\rho_0$ is the rest mass density of the system. 
+ 
+Because of the velocity condition $v<<c$, the velocity and energy momentum tensor, given in (\ref{eq:Tincoherentmatter}), can be written as
+ \begin{align}
+        U^{\alpha} &= \gamma(c, \textbf{v})\\
+        \notag
+        &=\left(1-\frac{v^2}{c^2}\right)^{-1/2}(c, \textbf{v})\\
+          \notag
+        &=(1+\mathcal{O}(\epsilon^2))(c, \textbf{v})\\
+        &=(c, \textbf{v}) + \mathcal{O}(\epsilon^2).
+    \end{align}
+   The components of the energy momentum tensor are
+   \begin{subequations}
+   \label{eq: expansionenergymomentum}
+ \begin{align}
+ \label{eq: Tmnused}
+        &T^{\alpha\beta}= \rho_0U^{\alpha}U^{\beta}  \\
+         \label{eq: T00used}
+        &T^{00}= \rho_0U^{0}U^{0}  =\rho_0 c^2 \gamma^2 = \rho_0 c^2 + \mathcal{O}(\epsilon^2)\\
+         \label{eq: Toiused}
+        &T^{0i}= \rho_0U^{0}U^{i}  =\rho_0 c v^i \gamma^2 = \rho_0 c v^i + \mathcal{O}(\epsilon^3)\\
+         \label{eq: Tijused}
+        &T^{ij}= \rho_0U^{i}U^{j}  =\rho_0 v^i v^j  \gamma^2 =\rho_0 v^i v^j+ \mathcal{O}(\epsilon^4)  
+    \end{align}
+ \end{subequations}
+ 
+    
+%\section{Perturbation to Minkowski metric}
+\section{Linearized theory}
+It is necessary to introduce a small parameter that gives the order of magnitude of all of the physical quantities. For the case of systems under the influence of gravitational forces, the small parameter is given by
+\begin{equation}
+	 \left(\frac{\phi}{c^{\hspace{0.05cm}2}}\right)^{1/2} \sim \frac{v}{c} \sim \epsilon,
+	%\epsilon \sim \frac{v}{c} \sim
+	\label{eq:epsilon_parameter}
+\end{equation}
+where $\phi$ is the Newtonian potential, $c$ the velocity of light and $v$ is the velocity of the particles under the influence of the gravitational source.  $\epsilon$ is the perturbative order of the metric expansion.\\
+
+When the gravitational field is weak, it is posible to introduce a small parameter, a perturbation to the Minkwoski metric tensor. In this way, the metric is approximately flat,
+\begin{align}
+	\label{eq:g+h}
+	g_{\mu \nu} &= \eta_{\mu \nu} + h_{\mu \nu}\\
+	\label{eq:g-h}
+	g^{\mu \nu} &= \eta^{\mu \nu} - h^{\mu \nu} + \mathcal{O}(\text{h}^2),
+\end{align}
+where $g_{\mu \nu}$ is the metric tensor of general relativity, $\eta_{\mu \nu}$ is the metric for Minkoswki space, given by $\eta_{\mu \nu} = \text{diag}(-1,1,1,1)$ and $h_{\mu \nu}$ is the perturbation. The last one has the same symmetry properties as $\eta_{\mu \nu}$.\\
+
+All the equations relevant to general relativity will be rewritten in term of the new-perturbed metric.
+
+
+\subsection*{Connections}
+The connections are given by (\ref{eq:originalconnections}),
+\begin{align}
+	\Gamma^{\alpha}_{\mu\nu} = \frac{1}{2} g^{\alpha\delta}(\partial_{\nu}g_{\delta\mu}+\partial_{\mu}g_{\delta\nu}-\partial_{\delta}g_{\mu\nu}).
+	\label{eq:originalconnections}
+\end{align}
+
+Replacing (\ref{eq:g+h}) and neglecting terms of order $\text{h}^2$ or higher, gives
+
+\begin{align}
+	\Gamma^{\alpha}_{\mu\nu} = \frac{1}{2} \eta^{\alpha\delta}(\partial_{\nu}h_{\delta\mu}+\partial_{\mu}h_{\delta\nu}-\partial_{\delta}h_{\mu\nu}) + \mathcal{O}(\text{h}^2).
+	\label{eq:approxconnections}
+\end{align}
+
+\subsection*{Riemann tensor}
+
+The Riemann tensor is given by (\ref{eq:originalriemann}),
+\begin{align}
+	R^{\alpha}_{\mu\beta\nu} = \partial_\beta\Gamma^{\alpha}_{\mu\nu} -\partial_\nu\Gamma^{\alpha}_{\mu\beta}+\Gamma^{\alpha}_{\sigma\beta}  \Gamma^{\sigma}_{\mu\nu}  - \Gamma^{\alpha}_{\sigma\nu}  \Gamma^{\sigma}_{\mu\beta} .
+	\label{eq:originalriemann}
+\end{align}
+
+Replacing (\ref{eq:g+h}) and neglecting terms of order $\text{h}^2$ or higher, gives
+
+\begin{align}
+	R_{\alpha\mu\beta\nu} = \frac{1}{2}\left(\partial_\mu\partial_\beta h_{\alpha\nu}+\partial_\alpha\partial_\nu h_{\mu\beta} - \partial_\mu\partial_\nu h_{\alpha\beta} - \partial_\alpha\partial_\beta h_{\mu\nu}\right)	 + \mathcal{O}(\text{h}^2)\label{eq:approxriemann}.
+\end{align}
+
+
+\subsection*{Ricci tensor}
+
+The Ricci tensor is given by (\ref{eq:originalricci}),
+\begin{align}
+	R_{\mu\nu} = R^{\alpha}_{\mu\alpha\nu} = g^{\alpha\beta} R_{\alpha\mu\beta\nu} 
+	\label{eq:originalricci}
+\end{align}
+
+Replacing (\ref{eq:g+h}) and neglecting terms of order $\text{h}^2$ or higher, gives
+
+\begin{align}
+	R_{\mu\nu}&= \frac{1}{2}\left(\partial_\mu\partial_\beta h^{\beta}_{\nu}+\partial_\alpha\partial_\nu h^{\alpha}_{\mu} - \partial_\mu\partial_\nu h^{\alpha}_{\alpha} - \eta^{\alpha\beta}\partial_\alpha\partial_\beta h_{\mu\nu}\right)	 + \mathcal{O}(\text{h}^2)\\
+	R_{\mu\nu}&= \frac{1}{2}\left(\partial_\mu\partial_\beta h^{\beta}_{\nu}+\partial_\alpha\partial_\nu h^{\alpha}_{\mu} - \partial_\mu\partial_\nu h - \Box h_{\mu\nu}\right)	 + \mathcal{O}(\text{h}^2)
+	\label{eq:approxricci}
+\end{align}
+At this approximation order, the trace $\text{h}$ is
+\begin{align}
+	h =  h^{\alpha}_{\alpha} = \eta^{\alpha\beta}h_{\alpha\beta}
+\end{align}
+and the D'Alambert operator is
+\begin{align}
+	\Box = \eta^{\alpha\beta}\partial_{\alpha}\partial_{\beta}.
+	\label{eq:Dalambert}
+\end{align}
+ 
+ \subsection*{Curvature scalar}
+ Following the same procedure, described for the previous quantities, the curvature scalar gives
+ \begin{align}
+	R = \partial_{\mu}\partial_{\nu}h^{\mu\nu} - \Box h + \mathcal{O}(\text{h}^2).
+	\label{eq:curvaturescalar}
+\end{align}
+
+%\subsection{Linearized Field equations}
+\subsection{Metric tensor of the linearized Field equations: First Post Newtonian Metric}
+
+The Einstein field tensor is defined as
+\begin{equation}
+	G_{\mu \nu} = R_{\mu \nu} - \frac{1}{2}g_{\mu \nu}R 
+\end{equation}
+With the results obtained, $g_{\mu \nu}$ given by (\ref{eq:g+h}), $R_{\mu \nu}$ given by (\ref{eq:approxricci}) and $R$ given by (\ref{eq:curvaturescalar}), it is found that
+\begin{equation}
+	\frac{1}{2}(\partial_{\sigma}\partial_{\mu}h_{\nu}^{\sigma}+\partial_{\sigma}\partial_{\nu}h_{\mu}^{\sigma}-\partial_{\mu}\partial_{\nu}h - \Box h_{\mu \nu} - \eta_{\mu \nu} \partial_{\mu}\partial_{\nu}h^{\mu \nu}  + \eta_{\mu \nu}\Box h )   + \mathcal{O}(\epsilon ^2) = \frac{8\pi G}{c^{\hspace{0.05cm}4}} T_{\mu \nu}.
+\end{equation}
+
+Now, we define the \textit{trace-reversed} function for $h_{\mu \nu}$,
+\begin{equation}
+  \overline{h}_{\mu \nu} = h_{\mu \nu} - \frac{1}{2}\eta_{\mu \nu}h
+  \label{eq:tracedreversed}
+\end{equation}
+Its principal characteristic is the property of the traces.
+\begin{equation}
+ 	\overline{h} = -h.
+\end{equation}
+The Einstein field equations are
+\begin{equation}
+\label{eq: ecuaciones de einstein lienalizadas}
+	-\frac{1}{2}( \Box \overline{h}_{\mu \nu} - \partial_{\mu}\partial_{\sigma}\overline{h}{}_{\nu}^{\sigma}- \partial_{\nu}\partial_{\sigma}\overline{h}{}_{\mu}^{\sigma}+\eta_{\mu \nu} \partial_{\sigma}\partial_{\rho}\overline{h}{}^{\sigma \rho}) + \mathcal{O}(\text{h} ^2) = \frac{8\pi G}{c^{\hspace{0.05cm}4}} T_{\mu \nu}.
+\end{equation}
+
+The \textit{trace-reversed} function allows to use the Lorentz \textit{gauge}
+\begin{equation}
+  \partial_\nu \overline{h}{}^{\mu \nu} = 0.
+\end{equation}
+Replacing the \textit{gauge}, the field equations, given in (\ref{eq: ecuaciones de einstein lienalizadas}), are reduced to
+\begin{equation}
+	 \Box \overline{h}_{\mu \nu} = - \frac{16\pi G}{c^{\hspace{0.05cm}4}} T_{\mu \nu},
+\end{equation}
+where $\Box$ is known as D'Alambert operator, and was given in (\ref{eq:Dalambert}),
+\begin{equation}
+ \Box  = -\partial_t^2 + \nabla^2.
+\end{equation}
+
+Taking into account the parameter $\epsilon$ introduced in (\ref{eq:epsilon_parameter}),
+\begin{equation}
+  \frac{\partial_0}{c} \sim \frac{1}{R}\frac{v}{c} \sim \frac{\epsilon}{R}, \hspace{1cm} \partial_{j} \sim \frac{1}{R},
+  \label{eq:aproxderivatives}
+\end{equation}
+The D' Alambertian can be written as
+\begin{equation}
+  \Box = -\frac{1}{c^2}\frac{\partial^2}{\partial t^2} + \nabla^2 \sim (-\epsilon ^2 \partial_j^2 + \partial_j^2)
+\end{equation}
+\begin{equation}
+  \Box = (1-\mathcal{O}(\epsilon ^2))\nabla^2.
+\end{equation}
+
+At this approximative order, it is found that
+\begin{equation}
+  \Box = \nabla^2 
+\end{equation}
+
+
+Dropping  $\mathcal{O}(\epsilon^2)$  and higher orders, the field equations are reduced to
+\begin{equation}
+   \nabla^2 \overline{h}_{\mu \nu} = - \frac{16\pi G}{c^{\hspace{0.05cm}4}} T_{\mu \nu}.
+\end{equation}
+
+The components of the energy momentum tensor $T_{\mu \nu}$ may be written as in (\ref{eq: Tijused}), (\ref{eq: Toiused}), (\ref{eq: T00used}) and (\ref{eq: Tmnused}).\\
+
+
+The solution of these equations are
+\begin{subequations}
+	\begin{align}
+	\label{eq: newpotentialandh00}
+ 			\overline h_{00} &= -\frac{4}{c^{\hspace{0.05cm}2}}\phi + \mathcal{O}(\epsilon^4) \\
+ 			\overline h_{0j} &= \frac{4}{c^{\hspace{0.05cm}3}}\zeta^j + \mathcal{O}(\epsilon^5) \\
+  			\overline h_{jk} &= \mathcal{O}(\epsilon^2),
+	\end{align}
+\end{subequations}
+where
+\begin{subequations}
+\begin{align}
+ 			\phi &= \frac{-G}{c^{\hspace{0.05cm}2}}\int \frac{T^{\hspace{0.05cm}00}(\mathbf{x'})}{|\mathbf{x}-\mathbf{x'}|}d^{\hspace{0.05cm}3}x'\\
+	\label{eq: vector potential}
+ 			\zeta^j &= \frac{-G}{c^{\hspace{0.05cm}2}}\int \frac{T^{\hspace{0.05cm}0j}(\mathbf{x'})}{|\mathbf{x}-\mathbf{x'}|}d^{\hspace{0.05cm}3}x' .
+	\end{align}
+\end{subequations}
+These potentials satisfy the Poisson equations
+\begin{align}
+\nabla^2 \phi &= 4\pi G\rho\\
+\nabla^2 \zeta^j &= 4\pi G v^j.
+\end{align}
+
+With the inverse of the \textit{trace-reversed} function given in (\ref{eq:tracedreversed}), it is found that the $h_{\mu \nu}$ elements of the metric, according to (\ref{eq:g+h}), are
+\begin{subequations}
+\begin{align}
+			h_{\mu \nu} &= \overline{h}_{\mu \nu} - \frac{1}{2}\eta_{\mu\nu}h\\
+ 			h_{00} &= -\frac{2}{c^{\hspace{0.05cm}2}}\phi + \mathcal{O}(\epsilon^4) \\
+ 			h_{0j} &= \frac{4}{c^{\hspace{0.05cm}3}}\zeta^j + \mathcal{O}(\epsilon^5) \\
+  			h_{jk} &= -\frac{2}{c^{\hspace{0.05cm}2}}\phi \delta _{jk} + \mathcal{O}(\epsilon^4).
+	\end{align}
+\end{subequations}
+The metric tensor $g_{\mu \nu}$ is given by
+\begin{subequations}
+	\begin{align} \label{eq:metrictensorsecondorder}
+			g_{\mu\nu} &= \eta_{\mu\nu}+h_{\mu \nu}\\
+ 			g_{00} &= -1-\frac{2}{c^{\hspace{0.05cm}2}}\phi + \mathcal{O}(\epsilon^4) \\
+ 			g_{0j} &= \frac{4}{c^{\hspace{0.05cm}3}}\zeta^j + \mathcal{O}(\epsilon^5) \\
+  			g_{jk} &= \left(1-\frac{2}{c^{\hspace{0.05cm}2}}\phi \right) \delta _{jk} + \mathcal{O}(\epsilon^4). 
+	\end{align}
+\end{subequations}
+
+The metric tensor can be expanded to any approximation order, the cut off depends on the system that we want to described. Here, the idea is to analyze the interaction between a test particle and a gravitational source due to effects different from the Newtonian influence. The first term that induces a perturbation to the newtonian case, will give the cut off of the expansion.\\
+
+The Lagrangian of a test particle of proper mass $m_0$ and proper time $\tau$ is
+\begin{equation}
+L = -m_0c\sqrt{-g_{\mu\nu}\frac{dx^{\mu}}{d\tau}\frac{dx^{\nu}}{d\tau}}.
+\end{equation}
+
+Replacing the metric up to second order, given in (\ref{eq:metrictensorsecondorder}), the Lagrangian becomes
+\begin{equation}
+ L = -m_0c^{\hspace{0.05cm}2} +\frac{1}{2}m_0v^{\hspace{0.05cm}2}+m_0\phi + \mathcal{O}(\epsilon^{3}).
+\end{equation}
+
+This Lagrangian shows only the newtonian case, therefore the metric until second order is not enough for the analysis and
+
+higher perturbative orders are needed. The metric, up to second order, corresponds to the zero Post-Newtonian approximation, up to fourth order corresponds to first Post-Newtonian approximation and so on. The correct perturbative order for each term of the metric is given in the Table (\ref{tab:tablePNorders}).\\
+\begin{table}[htbp]
+\centering
+\begin{tabular}{c|ccc}
+\centering
+ & 0PN  & 1PN  &2PN  \\ \hline
+ $g_{00}$&  $\epsilon^2$& $\epsilon^4$ & $\epsilon^6$ \\
+ $g_{0j}$& $\epsilon^1$&$\epsilon^3$  &$\epsilon^5$    \\
+ $g_{jk}$&$\epsilon^0 $ &  $\epsilon^2$&  $\epsilon^4$
+\end{tabular}
+  \caption{Post Newtonian approximation}
+ \label{tab:tablePNorders}
+\end{table}
+
+
+For the purpose of this work, it is considered only the first Post-Newtonian approximation. The metric tensor, up to this order, can be written as
+\begin{subequations}
+\begin{align}
+\label{eq:g00approx}
+ g_{00} &= -1+ ^{(2)}\hspace{-0.1cm}h_{00}+ ^{(4)}\hspace{-0.1cm}h_{00}+\mathcal{O}(\epsilon^6)\\
+ \label{eq:g0japprox}
+ g_{0j} &= \hspace{-0.1cm}^{(3)}\hspace{-0.05cm}h_{0j}+ \mathcal{O}(\epsilon^5) \\
+ \label{eq:gijapprox}
+  g_{jk} &= \delta_{jk}+^{(2)}\hspace{-0.1cm}h_{jk}+\mathcal{O}(\epsilon^4).
+\end{align}
+\end{subequations}
+
+It is important to note that the terms  $g_{00}$ and $g_{jk}$ only involve even order, and  $g_{0j}$ only odd order. The reason of this behavior lies in the fact that the terms $g_{0j}$ must change sign under a $t \rightarrow -t$ transformation \cite{Weinberg}.
+
+
+\subsection{The solution of the Einstein field equations up to first Post-Newtonian approximation}
+
+It is possible to rewrite the connections given in (\ref{eq:approxconnections}) and the Ricci tensor given in (\ref{eq:approxricci})  in terms of the metric tensor given in (\ref{eq:g00approx}), (\ref{eq:g0japprox}) and (\ref{eq:gijapprox}). The final purpose of rewriting these quantities in terms of the Post-Newtonian approximation is to find the field equations. \\
+
+Taking into account the order of the derivatives given in (\ref{eq:aproxderivatives}), the connections up to 1PN order are
+\begin{subequations}
+\label{eq: conectionsexpansion}
+\begin{align}
+&\Gamma_{\beta\gamma}^{\alpha} = \frac{1}{2}g^{\alpha\delta}(\partial_{\gamma} g_{\delta \beta} + \partial_{\beta} g_{\delta \gamma} -\partial_{\delta} g_{\beta \gamma} ) \\
+&\Gamma_{00}^{0} =  ^{(3)}\Gamma_{00}^{0} + \mathcal{O}(\sfrac{\epsilon ^ {3}}{R})\\
+&\Gamma_{0j}^{0} = ^{(2)}\Gamma_{0j}^{0} + \mathcal{O}(\sfrac{\epsilon ^ {4}}{R}) \\
+&\Gamma_{jk}^{0} = ^{(3)}\Gamma_{jk}^{0} + \mathcal{O}(\sfrac{\epsilon ^ {5}}{R}) \\
+&\Gamma_{00}^{i} = ^{(2)}\Gamma_{00}^{i} + ^{(4)}\Gamma_{00}^{i} +\mathcal{O}(\sfrac{\epsilon ^ {6}}{R})\\
+&\Gamma_{0j}^{i} = ^{(3)}\Gamma_{0j}^{i} + \mathcal{O}(\sfrac{\epsilon ^ {5}}{R})\\
+&\Gamma_{jk}^{i} = ^{(2)}\Gamma_{jk}^{i} + \mathcal{O}(\sfrac{\epsilon ^ {4}}{R}).
+\end{align}
+\end{subequations}
+
+Each term can be written as function of $h_{\mu\nu}$,
+\begin{subequations}
+\begin{align}
+%\begin{gathered}
+&^{(3)}\Gamma_{00}^0 =  -\frac{1}{2}\partial_0^{(2)}h_{00}\\
+&^{(2)}\Gamma_{0j}^0 =-\frac{1}{2}\partial_j^{(2)}h_{00}\\
+&^{(3)}\Gamma_{jk}^0 =-\frac{1}{2}(\partial_j^{(3)}h_{0k} +\partial_k^{(3)}h_{0j}-\partial_0^{(2)}h_{jk})\\
+&^{(2)}\Gamma_{00}^i =-\frac{1}{2}\partial_i^{(2)}h_{00}\\
+&^{(4)}\Gamma_{00}^i = -\frac{1}{2}\partial_i^{(4)}h_{00} +\partial_0^{(3)}h_{0i}-\frac{1}{2}( \partial_j^{(2)}h_{00}) ^{(2)}h_{ij}\\
+&^{(3)}\Gamma_{0j}^i = \frac{1}{2}(\partial_0^{(2)}h_{ij} +\partial_j^{(3)}h_{0i}-\partial_i^{(3)}h_{0j})\\
+&^{(2)}\Gamma_{jk}^i = \frac{1}{2}(\partial_k^{(2)}h_{ij} +\partial_j^{(2)}h_{ik}-\partial_i^{(2)}h_{jk}).
+%\end{gathered}
+\end{align}
+\end{subequations}
+
+
+The Ricci tensor, can be expanded as
+\begin{subequations}
+\begin{align}
+%\centering
+R_{00} = ^{(2)}R_{00}+^{(4)}R_{00}+\mathcal{O}(\epsilon^6)\\
+R_{0j} = ^{(3)}R_{0j}+^{(5)}R_{0j}+\mathcal{O}(\epsilon^7)\\
+R_{jk} = ^{(2)}R_{jk}+^{(4)}R_{jk}+\mathcal{O}(\epsilon^6).
+\end{align}
+\end{subequations}
+
+Written as function of the connections terms, given in (\ref{eq: conectionsexpansion}),
+\begin{subequations}
+\begin{align}
+&^{(2)}R_{00}=\partial_i^{(2)}\Gamma_{00}^{i}\\
+&^{(4)}R_{00} = \partial_i^{(4)}\Gamma_{00}^{i}-\partial_0^{(3)}\Gamma_{0i}^{i} + ^{(2)}\Gamma_{00}^{i \hspace{0.1cm}(2)}\Gamma_{ij}^{j}+^{(2)}\Gamma_{0i}^{0\hspace{0.1cm}(2)}\Gamma_{00}^{i}\\
+&^{(3)}R_{0j} =  \partial_0^{(2)}\Gamma_{0i}^{0}+\partial_j^{(3)}\Gamma_{0i}^{j} -\partial_i^{(3)}\Gamma_{00}^{0}-\partial_i^{(3)}\Gamma_{0j}^{j} \\
+&^{(2)}R_{jk} =\partial_{k}^{(2)}\Gamma_{ij}^{k}-\partial_j^{(2)}\Gamma_{0i}^{0}-\partial_j^{(2)}\Gamma_{ik}^{k}.
+\end{align}
+\end{subequations}
+
+For the purpose of this work, the Standard Post-Newtonian gauge is used\footnote{The election of this gauge has no physical meaning; it is just for convenience \cite{Theoryandexperiments}.}. This gauge is like the Harmonic gauge, $g^{\mu\nu}\Gamma_{\mu\nu}^{\alpha} = 0$, but considering  $\alpha = 0$ with the condition of null order $\mathcal{O}(\epsilon^3)$ and $\alpha = i$ and null order $\mathcal{O}(\epsilon^2)$, i.e.
+
+\begin{subequations}
+\begin{align}
+\label{eq: standardgauge}
+		\partial_j^{(3)}h_{0j}-\frac{1}{2}\partial_0^{(2)}h_{jj} = 0\\
+		\frac{1}{2}\partial_i^{(2)}h_{00}+\partial_j^{(2)}h_{ij}-\frac{1}{2}\partial_i^{(2)}h_{jj} = 0.
+\end{align}
+\end{subequations}
+
+The Ricci tensor can be rewritten with the use of the Standard Post-Newtonian Gauge as
+\begin{subequations}
+\begin{align}
+\label{eq: riccitensorstandard}
+&^{(2)}R_{00}=-\frac{1}{2}\nabla^2[^{(2)}h_{00}]\\
+&^{(4)}R_{00} = -\frac{1}{2}\nabla^2[^{(4)}h_{00}] + \frac{1}{2}\partial_j^{(2)}h_{ij}\partial_i ^{(2)}h_{00} +\frac{1}{2}{}^{(2)}h_{ij}\partial_i\partial_j^{(2)}h_{00}\\ \notag
+&\hspace{1cm}-\frac{1}{4}\partial_i^{(2)}h_{00}\partial_i^{(2)}h_{jj}-\frac{1}{4}\partial_i^{(2)}h_{00}\partial_i^{(2)}h_{00}\\
+&^{(3)}R_{0j} = \frac{1}{2}\nabla^2[^{(3)}h_{0i}]+\frac{1}{2}\partial_0\partial_j^{(2)}h_{ij} -\frac{1}{4}\partial_0\partial_i^{(2)}h_{jj}\\
+&^{(2)}R_{jk} =-\frac{1}{2}\nabla^2[^{(2)}h_{ij}].
+\end{align}
+\end{subequations}
+
+The only element that is missing to rewrite the Einstein field equations is the energy-momentum tensor. Expanding as the Ricci tensor, we have
+\begin{subequations}
+	\begin{align}
+T_{00} &= ^{(0)}T_{00}+^{(2)}T_{00}+\mathcal{O}(\epsilon^4)\\
+T_{0j} &= ^{(1)}T_{0j}+^{(3)}T_{0j}+\mathcal{O}(\epsilon^5)\\
+T_{jk} &= ^{(2)}T_{jk}+^{(4)}T_{jk}+\mathcal{O}(\epsilon^6).
+\end{align}
+\end{subequations}
+
+The Einstein tensor can be rewritten as
+\begin{align}
+R_{\mu\nu} -\frac{1}{2}Rg_{\mu\nu}= \frac{8\pi G}{c^{\hspace{0.05cm}4}}T_{\mu\nu}.
+\end{align}
+
+Taking the trace $R = g^{\mu\nu}R_{\mu\nu}$ y $T = g^{\mu\nu}T_{\mu\nu}$,
+\begin{align}
+R = -\left(\frac{8\pi G}{c^{\hspace{0.05cm}4}}\right)T
+\end{align}
+and replacing,
+\begin{align}
+R_{\mu\nu} &= \frac{8\pi G}{c^{\hspace{0.05cm}4}}\left(T_{\mu\nu}-\frac{1}{2}g_{\mu\nu}T\right)\\
+R_{\mu\nu} &= \frac{8\pi G}{c^{\hspace{0.05cm}4}}S_{\mu\nu}.
+\end{align}
+
+$S_{\mu\nu}$ can be expanded as $T_{\mu\nu}$ and Ricci tensor,
+\begin{subequations}
+	\begin{align}
+S_{00} &= ^{(0)}S_{00}+^{(2)}S_{00}+\mathcal{O}(\epsilon^4)\\
+S_{0j} &= ^{(1)}S_{0j}+^{(3)}S_{0j}+\mathcal{O}(\epsilon^5)\\
+S_{jk} &= ^{(2)}S_{jk}+^{(4)}S_{jk}+\mathcal{O}(\epsilon^6).
+\end{align}
+\end{subequations}
+
+Each term of $S_{\mu\nu}$ must be written with the energy momentum tensor
+
+\begin{align}
+\label{eq: Smntensor}
+&S_{\mu\nu}=T_{\mu\nu}-\frac{1}{2}g_{\mu\nu}T,
+\end{align}
+where T is the trace of the energy momentum tensor, given by
+\begin{align}
+&T= -^{(0)}T^{00} - ^{(2)}T^{00}+^{(2)}h_{00}T^{00}+\delta_{jk}T^{jk}+\mathcal{O}(\epsilon^4).
+\end{align}
+Finally
+\begin{subequations}
+\begin{align}
+\label{eq: SintermsofT}
+&^{(0)}S_{00} = \frac{1}{2}{}^{(0)}T^{00}\\
+&^{(2)}S_{00}= \frac{1}{2}\left(^{(2)}T^{00}-2^{(2)}h_{00}{}^{(0)}T^{00}+\delta_{ij}{}^{(2)}T^{ij}\right)\\
+&^{(1)}S_{0j}= -{}^{(1)}T^{0j}\\
+&^{(0)}S_{ij}= \frac{1}{2}\delta_{ij}{}^{(0)}T^{00}.
+\end{align}
+\end{subequations}
+
+
+Taking into account the form of $S_{\mu\nu}$ given in (\ref{eq: Smntensor}) and the order for the energy momentum tensor given in (\ref{eq: Tijused})(\ref{eq: Toiused})(\ref{eq: T00used})(\ref{eq: Tmnused}), the field equations can be written as
+\begin{subequations}
+\begin{align}
+^{(2)}R_{00} &= \frac{8\pi G}{c^{\hspace{0.05cm}4}}{}^{(0)}S_{00}\\
+^{(4)}R_{00} &= \frac{8\pi G}{c^{\hspace{0.05cm}4}}{}^{(2)}S_{00}\\
+^{(3)}R_{0i} &= \frac{8\pi G}{c^{\hspace{0.05cm}4}}{}^{(1)}S_{0i}\\
+^{(2)}R_{ij} &= \frac{8\pi G}{c^{\hspace{0.05cm}4}}{}^{(0)}S_{ij}.
+\end{align}
+\end{subequations}
+
+Combining the Ricci tensor after the use of the Standard post-Newtonian gauge given in (\ref{eq: riccitensorstandard}) and the $S_{\mu\nu}$ given in (\ref{eq: SintermsofT}) on the equations given above,
+
+\begin{align}
+\label{eq: R00approx}
+&^{(2)}R_{00}: \nabla^2[^{(2)}h_{00}] = -\frac{8\pi G}{c^{\hspace{0.05cm}4}}{}^{(0)}T{}^{\hspace{0.07cm}00}.
+\end{align}
+
+Now, the way to resolve this differential equation is using a Green function. First, suppose that $^{(2)}h_{00}$ can be written as
+
+\begin{align}
+&^{(2)}h_{00} = \int \mathcal{G}(\mathbf{x},\mathbf{x'})\left(-\frac{8\pi G}{c^{\hspace{0.05cm}4}}{}^{(0)}T{}^{\hspace{0.07cm}00}(t,\mathbf{x'})\right)d^{\hspace{0.07cm}3}x'.
+\end{align}
+Applying $\nabla^2$, gives
+
+\begin{align}
+&\nabla^2[^{(2)}h_{00}] = -\frac{8\pi G}{c^{\hspace{0.05cm}4}} \int \nabla^{2}{}\mathcal{G}(\mathbf{x},\mathbf{x'}){}^{(0)}T{}^{\hspace{0.07cm}00}(t,\mathbf{x'})d^{\hspace{0.07cm}3}x'.
+\end{align}
+
+For fullfilling the equation (\ref{eq: R00approx}), $\nabla^2$ applied to the Green function $\mathcal{G}(\mathbf{x},\mathbf{x'})$ must give
+\begin{align}
+&\nabla^{2}{}\mathcal{G}(\mathbf{x},\mathbf{x'}) = \delta(\mathbf{x}-\mathbf{x'}).
+\end{align}
+Solving, we get
+\begin{align}
+ \mathcal{G}(\mathbf{x},\mathbf{x'}) = -\frac{1}{4\pi |\mathbf{x}-\mathbf{x'}|}.
+ \end{align}
+ 
+The second order term to the tensor $h_{\mu\nu}$ is
+\begin{align}
+&^{(2)}h_{00} = \frac{2G}{c^{\hspace{0.05cm}4}}\int \frac{1}{|\mathbf{x}-\mathbf{x'}|}{}^{(0)}T{}^{\hspace{0.07cm}00}(t,\mathbf{x'})d^{\hspace{0.07cm}3}x'\\
+\label{eq: hoonewton}
+&^{(2)}h_{00} = -\frac{2\phi}{c^{\hspace{0.05cm}2}}.
+\end{align}
+where $\phi$ is the newtonian potential
+\begin{align}
+\phi = -\frac{G}{c^{\hspace{0.05cm}2}}\int \frac{1}{|\mathbf{x}-\mathbf{x'}|}{}^{(0)}T{}^{\hspace{0.07cm}00}(t,\mathbf{x'})d^{\hspace{0.07cm}3}x'.
+\end{align}
+
+
+
+%%%%
+Following the same procedure,
+\begin{align}
+&^{(4)}R_{00}: \nabla^2\left[^{(4)}h_{00}+\frac{2}{c^{\hspace{0.05cm}4}}\phi^2\right] = -\frac{8\pi G}{c^{\hspace{0.05cm}4}}{}[^{(2)}T{}^{\hspace{0.07cm}00} + ^{(2)}T{}^{\hspace{0.07cm}jj}].
+\end{align}
+Rewritten the left side of the equation by defining
+\begin{align}
+\label{eq: hoo4newton}
+&^{(4)}h_{00} = -\frac{2}{c^{\hspace{0.05cm}2}}\left(\frac{2}{c^{\hspace{0.05cm}2}}\phi^2+\psi \right),
+\end{align}
+we get
+\begin{align}
+&\nabla^2\left[-\frac{2\psi}{c^{\hspace{0.05cm}2}}\right] = -\frac{8\pi G}{c^{\hspace{0.05cm}4}}{}[^{(2)}T{}^{\hspace{0.07cm}00} + ^{(2)}T{}^{\hspace{0.07cm}jj}]\\
+&\nabla^2\psi = \frac{4\pi G}{c^{\hspace{0.05cm}2}}{}[^{(2)}T{}^{\hspace{0.07cm}00} + ^{(2)}T{}^{\hspace{0.07cm}jj}],
+\end{align}
+where $\psi$ is the potential
+\begin{align}
+\label{eq: psipotential4hoo}
+&\psi = -\frac{G}{c^{\hspace{0.05cm}2}}\int \frac{1}{|\mathbf{x}-\mathbf{x'}|}{}[^{(2)}T{}^{\hspace{0.07cm}00}(t,\mathbf{x'})+^{(2)}T{}^{\hspace{0.07cm}jj}(t,\mathbf{x'})]d^{\hspace{0.07cm}3}x'.
+\end{align}
+
+The next term is
+\begin{align}
+&^{(3)}R_{0i}: \nabla^2[^{(3)}h_{0i}] = \frac{16\pi G}{c^{\hspace{0.05cm}4}}{}^{(1)}T{}^{\hspace{0.07cm}0i} + \frac{1}{c^{\hspace{0.05cm}2}}\partial_0\partial_i\phi.
+\end{align}
+Defining
+\begin{align}
+&\nabla^2 \zeta_i = \frac{4\pi G}{c}{}^{(1)}T{}^{\hspace{0.07cm}0i}\\
+\label{eq: superpotential}
+ &\nabla^2 \chi = \frac{\phi}{c^{\hspace{0.05cm}2}},\\
+ \end{align}
+ we get 
+ \begin{align}
+ \label{eq: hoinewton}
+&^{(3)}h_{0i} = \frac{4}{c^{\hspace{0.05cm}3}} \zeta_i + \partial_0\partial_i\chi.
+\end{align}
+Solving to find the potential $\zeta_i$ gives
+\begin{align}
+&\zeta_i = -\frac{G}{c}\int \frac{1}{|\mathbf{x}-\mathbf{x'}|}{}^{(1)}T{}^{\hspace{0.07cm}0i}(t,\mathbf{x'})d^{\hspace{0.07cm}3}x'
+\end{align}
+and the superpotential $\chi $
+\begin{align}
+&\chi = -\frac{G}{2c^{\hspace{0.05cm}4}}\int |\mathbf{x}-\mathbf{x'}|{}^{(0)}T{}^{\hspace{0.07cm}00}(t,\mathbf{x'})d^{\hspace{0.07cm}3}x'.
+\end{align}
+
+$\chi$ is called super-potential because it depends on the Newtonian potential $\phi$. The relation is defined through (\ref{eq: superpotential}).\\
+
+The term for ${}^{(2)}h_{ij}$ gives
+\begin{align}
+&{}^{(2)}R_{ij}: \nabla^2[^{(2)}h_{ij}] = -\frac{8\pi G}{c^{\hspace{0.05cm}4}}\delta_{ij}{}^{(0)}T{}^{\hspace{0.07cm}00}\\
+&{}^{(2)}h_{ij} = -\frac{2}{c^{\hspace{0.05cm}2}}\delta_{ij}\phi, \\
+\label{eq: hjinewton}
+&\phi = -\frac{G}{c^{\hspace{0.05cm}2}}\int \frac{1}{|\mathbf{x}-\mathbf{x'}|}{}^{(0)}T{}^{\hspace{0.07cm}00}(t,\mathbf{x'})d^{\hspace{0.07cm}3}x'.
+\end{align}
+
+The metric given in (\ref{eq:gijapprox}), (\ref{eq:g0japprox}) and (\ref{eq:g00approx}) can be rewritten, using some of the results from above, given by equations (\ref{eq: hoonewton}), (\ref{eq: hoo4newton}), (\ref{eq: hoinewton}) and (\ref {eq: hjinewton}). The following metric goes a little bit further than the given in (\ref{eq:metrictensorsecondorder}),
+
+\begin{subequations}
+ \label{eq:finalmetricpn}
+\begin{align}
+ 			g_{00} &= -1-\frac{2\phi}{c^{\hspace{0.05cm}2}} -\frac{2}{c^2}\left(\frac{\phi^{\,2}}{c^{\,2}}+\psi \right) + \mathcal{O}(\epsilon^6) \\
+ 			g_{0j} &= \frac{4}{c^{\hspace{0.05cm}3}}\zeta^j + \partial_0 \partial_i \chi + \mathcal{O}(\epsilon^5) \\
+  			g_{jk} &= \left(1-\frac{2\phi}{c^{\hspace{0.05cm}2}} \right) \delta _{jk} + \mathcal{O}(\epsilon^4). 
+	\end{align}
+\end{subequations}
+

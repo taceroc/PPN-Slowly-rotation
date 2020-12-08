@@ -273,7 +273,7 @@ It is possible to write the solution as a multipole expansion as $\psi = \psi_0 
 %	&\left.- \frac{3r}{m} \sin^2\theta \left[\frac{1}{2}\left(1-\frac{m}{r}\right)\ln\left(1-\frac{2m}{r}\right) + \frac{m}{r}\right]\right\} + \bar{q}_{\, l}^2\left\{\right\}
 %\end{split}
 %\end{align}
-The full expression of $\gamma$ is given in \cite{Brumberg, johnandcoulter}.\\
+The full expression of this metric is given in \cite{Brumberg, johnandcoulter}.\\
 
 The expression for $\psi$ can be expanded in powers of $\sfrac{m}{r}$, ($m  = \sfrac{GM}{c^2}$),\\
 \begin{align}
@@ -281,7 +281,6 @@ The expression for $\psi$ can be expanded in powers of $\sfrac{m}{r}$, ($m  = \s
 \end{align}
 
 Replacing,
-
 \begin{align}
 \begin{split}
 	\psi &= \frac{1}{2}\ln\left(1-\frac{2m}{r}\right) + \frac{\bar{q}_{\, l}}{2}(3\cos^2\theta - 1) \left[-\frac{2}{15}\frac{m^3}{r^3}-\frac{2}{5}\frac{m^4}{r^4} + ...\right].
@@ -303,7 +302,7 @@ According to (\ref{eq: newpotentialandh00}), (\ref{eq:g00approx}) and the expres
 
 \subsection{Newtonian Quadrupole Moment}
 
-In this section, we will obtain the same expression for the potential $\phi$  given by expanding the Weyl Levi Civita Metric; but following a Newtonian approach. The newtonian potential is given by
+In this section, we will obtain the same expression for the potential $\phi$  given by expanding the Weyl Levi Civita Metric; but following a Newtonian approach. The Newtonian potential is given by
 \begin{align}
 \phi = -G \int \frac{\rho(t, \mathbf{x'})}{|\mathbf{x} - \mathbf{x'}|} d^{\,3}x',
 \end{align}
@@ -342,7 +341,7 @@ The potential becomes
 \phi &=   -\frac{GM}{r}  - G \sum ^{\infty}_{l =2} \sum ^{m = l}_{m =-l}\frac{4\pi}{2l+1} \frac{I_{\,lm}(t)}{r^{\, l+1}}Y _{\,l\,m} (\theta, \upvarphi).
 \end{align}
 
-Defining the source as an axially symmetric body, and the z-direction as the symmetry axis, we do not longer have a dependence on the $\upvarphi$ coordinate the expression for the potential becomes
+Defining the source as an axially symmetric body, and the z-direction as the symmetry axis, we do not longer have a dependence on the $\upvarphi$ coordinate, then the expression for the potential becomes
 \begin{align}
 \phi = -\frac{GM}{r} - G\sum ^{\infty}_{l =2} \sqrt{\frac{4\pi}{2l+1}} \frac{I_{l\,0}}{r^{\, l+1}}P _{\,l}  (\cos \theta).
 \end{align}
@@ -383,14 +382,14 @@ The non-traceless inertia moments can be written in terms of the inertia moments
 
 Define
 \begin{align}
-\mathcal{I}_{z} = C , \hspace{1cm}
-\mathcal{I}_{x} = \mathcal{I}_{y}  = A.
+\mathcal{I}^{z} = C , \hspace{1cm}
+\mathcal{I}^{x} = \mathcal{I}^{y}  = A.
 \end{align}
 
 According to (\ref{eq: nontracelessinertiadefinition})
 \begin{align*}
-q_{z} = -\mathcal{I}_{z} + q, \hspace{1cm}
-q_{y} = q_{x} = -\mathcal{I}_{x} + q
+q^{z} = -\mathcal{I}^{z} + q, \hspace{1cm}
+q^{y} = q^{x} = -\mathcal{I}^{x} + q
 \end{align*}
 where
 \begin{align*}
@@ -400,8 +399,8 @@ Then,
 \begin{subequations}
 \label{eq: inertiamomentobrumberchipotential}
 \begin{align}
-&q_{z} = A - \frac{C}{2}\\
-&q_{y} = q_{x} = \frac{C}{2}.
+&q^{z} = A - \frac{C}{2}\\
+&q^{y} = q^{x} = \frac{C}{2}.
 \end{align}
 \end{subequations}
 
@@ -440,10 +439,6 @@ Going back to the Newtonian potential
 \end{align*}
 
 Note here that this form is equivalent to the one given in (\ref{eq: potentialWLC}).\\
-
-
-
-
 %Compare this expression with the one obtained by considering a body as a distribution of mass points and a single point of mas $M_n$, see Figure (\ref{fig: massdistribution}); the single mass feels the gravitational effect of the body. The potential of the system is \cite{Goldstain}
 %\begin{align*}
 %	V = -\frac{GM_nm_i}{r_i} = \frac{-GM_nm_i}{r\sqrt{1+\left(\frac{r_i'}{r}\right)^2 - 2\frac{r_i'}{r}\cos\psi_i'}}
@@ -532,16 +527,15 @@ It is possible to write the metric for the slowly rotating spheroid with the gen
 %  			g_{jk} &= \left(1-\frac{2}{c^{\hspace{0.05cm}2}}\phi \right) \delta _{jk} + \mathcal{O}(\epsilon^4) 
 %	\end{align}
 %\end{subequations}
-
 \begin{subequations}
 \label{eq: hmunuslowlyrotation}
 \begin{align}
  			h_{00} &= {}^{(2)}h_{00} + {}^{(4)}h_{00} + \mathcal{O}(\epsilon^6) 
-			=-\frac{2}{c^{\hspace{0.05cm}2}}\phi -\frac{2}{c^2}\left(\frac{\phi^2}{c^2}+\psi \right) + \mathcal{O}(\epsilon^6) \\
+			=-\frac{2 \phi}{c^{\hspace{0.05cm}2}} -\frac{2}{c^2}\left(\frac{\phi^2}{c^2}+\psi \right) + \mathcal{O}(\epsilon^6) \\
  			h_{0j} &= {}^{(3)}h_{0j}  + \mathcal{O}(\epsilon^5) 
 			= \frac{4}{c^{\hspace{0.05cm}3}}\zeta^j +  \partial_0 \partial_k \chi + \mathcal{O}(\epsilon^5) \\
   			h_{jk} &= {}^{(2)}h_{jk} + \mathcal{O}(\epsilon^4) 
-			= \left(1-\frac{2}{c^{\hspace{0.05cm}2}}\phi \right) \delta _{jk} + \mathcal{O}(\epsilon^4) 
+			= \left(1-\frac{2\phi}{c^{\hspace{0.05cm}2}} \right) \delta _{jk} + \mathcal{O}(\epsilon^4) 
 	\end{align}
 \end{subequations}
 
@@ -572,7 +566,7 @@ Expand the term $|\mathbf{x}-\mathbf{x'}|^{-1}$ in a Taylor series
 %	 &=\frac{1}{r}\left[1-\frac{1}{2}\left( \frac{r'}{r}\right)^2 +\frac{\mathbf{r} \cdot \mathbf{r'}}{r^2}+...\right]
 %\end{align}
 
-the energy momentum component $T^{\hspace{0.05cm}0j}$ in (\ref{eq: Toiused}), then the vector potential in terms of the velocity of the source is
+using the energy momentum component $T^{\hspace{0.05cm}0j}$ in (\ref{eq: Toiused}), then the vector potential in terms of the velocity of the source is
 
  \begin{align}
  \begin{split}
@@ -601,7 +595,7 @@ For the second term,
 	-\frac{Gx^{m}}{r^3} \int \rho(\mathbf{x'}) x^{'m} v^{'j}d^{\hspace{0.05cm}3}x' = -\epsilon_{jik}  \frac{Gx^{m}\omega^i}{r^3} \int \rho(\mathbf{x'}) x^{'m} x^{'k}d^{\hspace{0.05cm}3}x'
 \end{align*}
 
-Since the term inside the integral is the non-traceless inertia moment given in (\ref{eq: nontraclessinertiamoment}), the vector potential is 
+since the term inside the integral is the non-traceless inertia moment given in (\ref{eq: nontraclessinertiamoment}), the vector potential is 
  \begin{align}
 	\zeta^j 
 	& = -\frac{G}{r^3}\epsilon_{jik} \omega^i q^{\,km} x^{m}.
@@ -674,13 +668,13 @@ The $\psi$ potential up to first order of approximation in $\omega$ is
 &= \frac{2G}{c^{\hspace{0.05cm}2}}\int \frac{1}{|\mathbf{x}-\mathbf{x'}|} \rho(\mathbf{x'})\phi(\mathbf{x'}) d^{\hspace{0.07cm}3}x'.
 \end{align}
 
-Expand the term $|\mathbf{x}-\mathbf{x'}|^{-1}$ as in (\ref{eq: 1/xx'taylorexpansion})
+Expanding the term $|\mathbf{x}-\mathbf{x'}|^{-1}$ as in (\ref{eq: 1/xx'taylorexpansion})
 \begin{align*}
 \psi &= \frac{2G}{c^{\hspace{0.05cm}2}}\left[ \frac{1}{r} \int \rho(\mathbf{x'})\phi(\mathbf{x'}) d^{\hspace{0.07cm}3}x'  - \partial_m\left(\frac{1}{r}\right) \int \rho(\mathbf{x'})\phi(\mathbf{x'}) x^{'m}d^{\hspace{0.07cm}3}x'  \right] + ...\\
 &= \frac{2G}{c^{\hspace{0.05cm}2}}\left[ \frac{1}{r} \int \rho(\mathbf{x'})\phi(\mathbf{x'}) d^{\hspace{0.07cm}3}x'  + \frac{x^m}{r^3} \int \rho(\mathbf{x'})\phi(\mathbf{x'}) x^{'m}d^{\hspace{0.07cm}3}x'  \right] + ... \hspace{0.3cm} .
 \end{align*}
 
-Expand the potential $\phi(\mathbf{x'})$ 
+Expanding the potential $\phi(\mathbf{x'})$ 
 \begin{align}
 \phi(\mathbf{x'}) = \phi(\mathbf{x}) + (x^{'j} - x^j)\partial _j \phi (\mathbf{x}) + ...
 \end{align}
@@ -724,7 +718,7 @@ and the third term is
 \end{align}
 where $ Q(r, M, G)$ refers to the term of the derivative $\partial_k  \phi(\mathbf{x})$ that has dependence on $Q$, and $Q^{\,2}$ to the term involving multiplication of the inertia moments.\\
 
-Replace (\ref{eq: psipotentialsecondterm}), (\ref{eq: psipotentialthirdterm}) and the Newtonian potential in (\ref{eq: psipotentialexpresion}),
+Replacing (\ref{eq: psipotentialsecondterm}), (\ref{eq: psipotentialthirdterm}) and the Newtonian potential in (\ref{eq: psipotentialexpresion}),
 \begin{align}
 \notag
 \psi &= \frac{2m}{r}\left[ -\frac{GM}{r} + \frac{Q}{2r^3}\left(1-\frac{3z^2}{r^2}\right) - \frac{GM}{r}- \frac{3Q}{2r^3}\left(1-\frac{3z^2}{r^2}\right) + \frac{GC}{2r^3}   + \frac{Qz^2}{r^5} \right]\\
@@ -833,7 +827,7 @@ where
 
 \section{Perturbing Force}
 
-With the Lagrangian given above calculate the perturbing force, via the Euler Lagrange equations. The term $L_0$ is the Newtonian contribution, i.e.,it  is not part of the perturbation. Although the perturbing forces do not arise from a potential, those forces can be found by
+With the Lagrangian given above calculate the perturbing force, via the Euler Lagrange equations. The term $L_0$ is the Newtonian contribution, i.e., it  is not part of the perturbation. Although the perturbing forces do not arise from a potential, those forces can be found by
 \begin{align}
 F = \frac{\partial L}{\partial \mathbf{x}} - \frac{d}{dt}\left(\frac{\partial L}{\partial \dot{\mathbf{x}} }\right).
 \end{align}
@@ -1141,7 +1135,7 @@ Summarizing, the perturbing force arising from the perturbative Lagrangian given
 \end{align}
 \end{subequations}
 
-The term $\mathbf{F_1}$ is the newtonian perturbation due to the quadrupole moment. $\mathbf{F_2}$ is the relativist perturbation for one body problem, note here that this terms is exactly, less than parameters, as the equation of motion given in (\ref{eq: equationofmotion}). $\mathbf{F_3}$ is the perturbation due to the rotation of the gravitational source, note here the presence of the angular velocity $\omega$ and the inertia moment in the z-direction $C$. The final term, $\mathbf{F_4}$, is the relativistic perturbation due to the quadrupole moment.\\
+The term $\mathbf{F_1}$ is the Newtonian perturbation due to the quadrupole moment. $\mathbf{F_2}$ is the relativist perturbation for one body problem, note here that this terms is exactly, less than parameters, as the equation of motion given in (\ref{eq: equationofmotion}). $\mathbf{F_3}$ is the perturbation due to the rotation of the gravitational source, note here the presence of the angular velocity $\omega$ and the inertia moment in the z-direction $C$. The final term, $\mathbf{F_4}$, is the relativistic perturbation due to the quadrupole moment.\\
 
 The perturbative Lagrangian in (\ref{eq: lagrangianslowlyrotation}) and the perturbing force in (\ref{eq: Fperturbingforce}) are the same given in \cite{Brumberg}, by defining $\beta = 1$.
 
@@ -1225,8 +1219,8 @@ where $M$ and $R$ are the mass and the radius, respectively, of the central body
  \textbf{Angular Velocity} \tablefootnote{ \label{ref}\cite{quadrupolevalue}}($\omega$)& $7.73141 \times 10 ^{-12}$ rad/s  \\
   \textbf{Quadrupole Moment}\textsuperscript{\ref{ref}} ($J_2$)& $1.0826 \times 10 ^{-3}$  \\
  \textbf{Quadrupole Moment} ($Q$)& $(G MR^2)1.0826 \times 10 ^{-3}$  \\
-\textbf{Inertia Momento z-axis}& $8.034 \times 10^ {40}$ g/m$^2$ \\
-\textbf{Inertia Momento x-axis}& $8.008 \times 10^ {40}$ g/m$^2$ \\ \hline
+\textbf{Inertia Moment z-axis}& $8.034 \times 10^ {40}$ g/m$^2$ \\
+\textbf{Inertia Moment x-axis}& $8.008 \times 10^ {40}$ g/m$^2$ \\ \hline
 \end{tabular}
 \caption{Earth Properties}
 \label{table: earth properties}
@@ -1239,7 +1233,7 @@ A Geostationary orbit is the one described by an object who look stationary from
 \centering
 \begin{tabular}{ll}
  \textbf{Geostationary Satellite: Initial Properties} & \\ \hline
- \textbf{Semi-mayor axis} (a) & $4.2164 \times 10^7$ m  \\
+ \textbf{Semi-major axis} (a) & $4.2164 \times 10^7$ m  \\
  \textbf{Eccentricity} (e) &$0.01$    \\
  \textbf{Inclination} ($\iota$)& $0.01^{\circ} $   \\
   \textbf{Argument of the ascending node} ($\Omega $)& $0^{\circ}$  \\
@@ -1255,7 +1249,7 @@ By an iterative process, where each step is one period $T$, and the change of ea
 \begin{figure}[htb!]
 \centering
 \includegraphics[width=0.8\linewidth]{/Users/tatianaacerocuellar/Documents/Mecanica_Celeste_Relativista/TRABAJOGRADOPRE/Code/a - Geostationary.pdf}
-\caption{Semi-mayor axis for geostationary orbit considering relativistic and slowly rotation contributions.}
+\caption{Semi-major axis for geostationary orbit considering relativistic and slowly rotation contributions.}
 \label{fig: a - Geostationary}
 \end{figure}
 
@@ -1274,7 +1268,7 @@ By an iterative process, where each step is one period $T$, and the change of ea
 \label{fig: inclination - Geostationary}
 \end{figure}
 
-Until this degree of approximation there is no change for the semi-mayor axis in Figure \ref{fig: a - Geostationary}, eccentricity in Figure \ref{fig: ecc - Geostationary} and inclination in Figure \ref{fig: inclination - Geostationary}. Which agree with the fact that the parameters for this kind of orbit are determined by establish that the satellite must be always the equator. The principal applications for this orbits are communication and navigation satellites.\\
+Until this degree of approximation there is no change for the semi-major axis in Figure \ref{fig: a - Geostationary}, eccentricity in Figure \ref{fig: ecc - Geostationary} and inclination in Figure \ref{fig: inclination - Geostationary}. Which agree with the fact that the parameters for this kind of orbit are determined by establish that the satellite must be always the equator. The principal applications for this orbits are communication and navigation satellites.\\
 \clearpage
 
 \begin{figure}[htb!]
@@ -1332,7 +1326,7 @@ A Molniya Orbit is one type of orbit that has a high eccentricity, in such a way
 \centering
 \begin{tabular}{ll}
  \textbf{Molniya Satellite: Initial Properties} & \\ \hline
- \textbf{Semi-mayor axis} (a) & $2.66 \times 10^7$ m  \\
+ \textbf{Semi-major axis} (a) & $2.66 \times 10^7$ m  \\
  \textbf{Eccentricity} (e) &$0.74$    \\
  \textbf{Inclination} ($\iota$)& $63.435^{\circ} $   \\
   \textbf{Argument of the ascending node} ($\Omega $)& $270^{\circ}$   \\
@@ -1344,12 +1338,12 @@ A Molniya Orbit is one type of orbit that has a high eccentricity, in such a way
 Below we plot the orbital elements considering the inclination given in Table \ref{table: molniya satellite properties} plus the elements considering a small change in the inclination, $\iota = 63^{\circ}$ and preserving the rest of the initial parameters.\\
 
 
-For the semi-mayor axis, eccentricity and inclination, corresponding to the Figure \ref{fig: a - Molniya}, \ref{fig: ecc - Molniya} and \ref{fig: inclination - Molniya} respectively; the $y$ axis correspond to the difference between the current value of the orbital element and the initial value. In this way, and because the changes are small, there is a easy observation of the changes in the orbital elements.
+For the semi-major axis, eccentricity and inclination, corresponding to the Figure \ref{fig: a - Molniya}, \ref{fig: ecc - Molniya} and \ref{fig: inclination - Molniya} respectively; the $y$ axis correspond to the difference between the current value of the orbital element and the initial value. In this way, and because the changes are small, there is a easy observation of the changes in the orbital elements.
 
 \begin{figure}[htb!]
 \centering
 \includegraphics[width=0.7\linewidth]{/Users/tatianaacerocuellar/Documents/Mecanica_Celeste_Relativista/TRABAJOGRADOPRE/Code/a - Molniya.pdf}
-\caption{Semi-mayor axis for Molniya orbit considering relativistic and slowly rotation contributions.}
+\caption{Semi-major axis for Molniya orbit considering relativistic and slowly rotation contributions.}
 \label{fig: a - Molniya}
 \end{figure}
 
@@ -1422,7 +1416,7 @@ In Figure \ref{fig: molniya3d+geostationary} we plot the initial and $T = 1100$ 
 \section{Conclusions}
 The construction of the metric for a slowly rotational gravitational body following the approach given in \cite{Brumberg} differs from the result obtained in the book in the ${}^{(4)}h_{00} $ term in (\ref{eq: metricnoparametrized}). The disagreement arises because the book implements the harmonic gauge; however, in this work, we used the standard post-Newtonian gauge, as mentioned in Chapter \ref{ch: firstchapter} and \ref{ch:chapter2}. The difference can be easily managed by writing the metric in the parametric form, as in (\ref{eq: metricparametrized}); for a given value for $\beta$ and $\alpha$ the metric in \cite{Brumberg} is recovered.\\
 
-The perturbing force determined by the metric gives reason for all the contributions that we were expecting; the Newtonian quadrupole perturbation, Schwarzchild-like relativistic perturbation, perturbation due to the rotation of the body, and the relativistic quadrupole perturbation. The perturbations allow determining the secular changes in all the six orbital elements. The changes in the eccentricity, semi-mayor axis, and inclination arise only for the relativistic quadrupole perturbations. The argument of the ascending node change due to the rotation of the central body, and the perturbations related to the quadrupole, both Newtonian and relativistic. Finally, the argument of the pericenter change due to the contribution of all the four perturbing forces considered here, note here that is the only orbital elements affected by the Schwarzchild-like relativistic perturbation.\\
+The perturbing force determined by the metric gives reason for all the contributions that we were expecting; the Newtonian quadrupole perturbation, Schwarzchild-like relativistic perturbation, perturbation due to the rotation of the body, and the relativistic quadrupole perturbation. The perturbations allow determining the secular changes in all the six orbital elements. The changes in the eccentricity, semi-major axis, and inclination arise only for the relativistic quadrupole perturbations. The argument of the ascending node change due to the rotation of the central body, and the perturbations related to the quadrupole, both Newtonian and relativistic. Finally, the argument of the pericenter change due to the contribution of all the four perturbing forces considered here, note here that is the only orbital elements affected by the Schwarzchild-like relativistic perturbation.\\
 
 The plot of the secular changes over the elliptical period replicate the good know behavior of the geostationary and Molniya orbit for satellites around the Earth. The order of each on of the terms of the secular changes correspond to perturbing orders, i.e., for the argument of the pericenter, given in (\ref{eq: Delta_o}), the contributions and the respective order are in Table \ref{table: order for omega}.
 

@@ -5,7 +5,7 @@
 \section{Weak fields}
 The Einstein field equations are not linear. The physical reason is that the gravitational field of a body contains energy, therefore a mass and because of general relativity, creates a gravitational field; in conclusion, the field itself is in part, its own source and a feedback effect is created. The analysis of the gravitational field produced by many bodies is not the sum of the field produce by each body. If the body produces a weak gravitational field, the feedback effect can be ignored, and it is possible to make the Einstein field equations linear and easy to solve \cite{Adler}.\\
 
-The strong gravitational field, such as the produced by black holes, is the one considered by the Einstein field equations. Nevertheless, the gravitational field produced by stars like the Sun, neutron stars and other astrophyisical objects are weak \cite{GravityPoisson}. This characteristic allow us the study of the Einstein field equations and other relevant expressions for the general relativity as approximations. These expressions may describe the behavior of Newtonian gravity by imposing an asymptotic limit. When the consideration of the field is made, it is possible to linearize the field equations by means of introducing a perturbation to the metric Minkowski tensor \cite{Larranaga}. \\
+The strong gravitational field, such as the produced by black holes, is the one considered by the Einstein field equations. Nevertheless, the gravitational field produced by stars, like the Sun, are weak \cite{GravityPoisson}. This characteristic allow us the study of the Einstein field equations and other relevant expressions for the general relativity as approximations. These expressions may describe the behavior of Newtonian gravity by imposing an asymptotic limit. When the consideration of the field is made, it is possible to linearize the field equations by means of introducing a perturbation to the metric Minkowski tensor \cite{Larranaga}. \\
 
 Furthermore, most of the physic systems can be modeled as perfect fluids. An observer moving with the same velocity as the system (or fluid), sees this one as isotropic; it is said that the fluid can be described by its mass density and its isotropic pressure. On a perfect fluid, there is no shear stress. By means of the energy-momentum tensor $T_{\mu\nu}$, suppose the fluid is at some space-time point, the energy-momentum tensor in the observer's frame of reference can be written as
 
@@ -34,10 +34,10 @@ The four-velocity can be written as
 The systems are considered to be composed of particles moving at small velocities. Therefore, these are non-interacting particles, they are in rest with respect to each other. A small velocity means zero pressure for a perfect fluid. In terms of the energy momentum tensor,
 
  \begin{align}
-        T^{\,\alpha\beta}&= \rho_0U^{\alpha}U^{\beta},
+        T^{\,\alpha\beta}&= \rho U^{\alpha}U^{\beta},
         \label{eq:Tincoherentmatter}
     \end{align}
- where $\rho_0$ is the rest mass density of the system. 
+ where $\rho$ is the rest mass density of the system. 
  
 Because of the velocity condition $v<<c$, the velocity and energy momentum tensor, given in (\ref{eq:Tincoherentmatter}), can be written as
  \begin{align}
@@ -53,13 +53,13 @@ Because of the velocity condition $v<<c$, the velocity and energy momentum tenso
    \label{eq: expansionenergymomentum}
  \begin{align}
  \label{eq: Tmnused}
-        &T^{\alpha\beta}= \rho_0U^{\alpha}U^{\beta}  \\
+        &T^{\alpha\beta}= \rho U^{\alpha}U^{\beta}  \\
          \label{eq: T00used}
-        &T^{00}= \rho_0U^{0}U^{0}  =\rho_0 c^2 \gamma^2 = \rho_0 c^2 + \mathcal{O}(\epsilon^2)\\
+        &T^{00}= \rho U^{0}U^{0}  =\rho c^2 \gamma^2 = \rho c^2 + \mathcal{O}(\epsilon^2)\\
          \label{eq: Toiused}
-        &T^{0i}= \rho_0U^{0}U^{i}  =\rho_0 c v^i \gamma^2 = \rho_0 c v^i + \mathcal{O}(\epsilon^3)\\
+        &T^{0i}= \rho U^{0}U^{i}  =\rho c v^i \gamma^2 = \rho c v^i + \mathcal{O}(\epsilon^3)\\
          \label{eq: Tijused}
-        &T^{ij}= \rho_0U^{i}U^{j}  =\rho_0 v^i v^j  \gamma^2 =\rho_0 v^i v^j+ \mathcal{O}(\epsilon^4)  
+        &T^{ij}= \rho U^{i}U^{j}  =\rho v^i v^j  \gamma^2 =\rho v^i v^j+ \mathcal{O}(\epsilon^4)  
     \end{align}
  \end{subequations}
  
@@ -192,7 +192,7 @@ Taking into account the parameter $\epsilon$ introduced in (\ref{eq:epsilon_para
   \frac{\partial_0}{c} \sim \frac{1}{R}\frac{v}{c} \sim \frac{\epsilon}{R}, \hspace{1cm} \partial_{j} \sim \frac{1}{R},
   \label{eq:aproxderivatives}
 \end{equation}
-The D' Alambertian can be written as
+the D' Alambertian can be written as
 \begin{equation}
   \Box = -\frac{1}{c^2}\frac{\partial^2}{\partial t^2} + \nabla^2 \sim (-\epsilon ^2 \partial_j^2 + \partial_j^2)
 \end{equation}
@@ -211,14 +211,14 @@ Dropping  $\mathcal{O}(\epsilon^2)$  and higher orders, the field equations are 
    \nabla^2 \overline{h}_{\mu \nu} = - \frac{16\pi G}{c^{\hspace{0.05cm}4}} T_{\mu \nu}.
 \end{equation}
 
-The components of the energy momentum tensor $T_{\mu \nu}$ may be written as in (\ref{eq: Tijused}), (\ref{eq: Toiused}), (\ref{eq: T00used}) and (\ref{eq: Tmnused}).\\
+The components of the energy momentum tensor $T_{\mu \nu}$ may be written as in (\ref{eq: expansionenergymomentum}).\\
 
 
 The solution of these equations are
 \begin{subequations}
 	\begin{align}
 	\label{eq: newpotentialandh00}
- 			\overline h_{00} &= -\frac{4}{c^{\hspace{0.05cm}2}}\phi + \mathcal{O}(\epsilon^4) \\
+ 			\overline h_{00} &= -\frac{4\phi}{c^{\hspace{0.05cm}2}} + \mathcal{O}(\epsilon^4) \\
  			\overline h_{0j} &= \frac{4}{c^{\hspace{0.05cm}3}}\zeta^j + \mathcal{O}(\epsilon^5) \\
   			\overline h_{jk} &= \mathcal{O}(\epsilon^2),
 	\end{align}
@@ -241,22 +241,22 @@ With the inverse of the \textit{trace-reversed} function given in (\ref{eq:trace
 \begin{subequations}
 \begin{align}
 			h_{\mu \nu} &= \overline{h}_{\mu \nu} - \frac{1}{2}\eta_{\mu\nu}h\\
- 			h_{00} &= -\frac{2}{c^{\hspace{0.05cm}2}}\phi + \mathcal{O}(\epsilon^4) \\
+ 			h_{00} &= -\frac{2\phi}{c^{\hspace{0.05cm}2}} + \mathcal{O}(\epsilon^4) \\
  			h_{0j} &= \frac{4}{c^{\hspace{0.05cm}3}}\zeta^j + \mathcal{O}(\epsilon^5) \\
-  			h_{jk} &= -\frac{2}{c^{\hspace{0.05cm}2}}\phi \delta _{jk} + \mathcal{O}(\epsilon^4).
+  			h_{jk} &= -\frac{2\phi}{c^{\hspace{0.05cm}2}}\delta _{jk} + \mathcal{O}(\epsilon^4).
 	\end{align}
 \end{subequations}
 The metric tensor $g_{\mu \nu}$ is given by
 \begin{subequations}
 	\begin{align} \label{eq:metrictensorsecondorder}
 			g_{\mu\nu} &= \eta_{\mu\nu}+h_{\mu \nu}\\
- 			g_{00} &= -1-\frac{2}{c^{\hspace{0.05cm}2}}\phi + \mathcal{O}(\epsilon^4) \\
+ 			g_{00} &= -1-\frac{2\phi}{c^{\hspace{0.05cm}2}} + \mathcal{O}(\epsilon^4) \\
  			g_{0j} &= \frac{4}{c^{\hspace{0.05cm}3}}\zeta^j + \mathcal{O}(\epsilon^5) \\
-  			g_{jk} &= \left(1-\frac{2}{c^{\hspace{0.05cm}2}}\phi \right) \delta _{jk} + \mathcal{O}(\epsilon^4). 
+  			g_{jk} &= \left(1-\frac{2\phi}{c^{\hspace{0.05cm}2}}\right) \delta _{jk} + \mathcal{O}(\epsilon^4). 
 	\end{align}
 \end{subequations}
 
-The metric tensor can be expanded to any approximation order, the cut off depends on the system that we want to described. Here, the idea is to analyze the interaction between a test particle and a gravitational source due to effects different from the Newtonian influence. The first term that induces a perturbation to the newtonian case, will give the cut off of the expansion.\\
+The metric tensor can be expanded to any approximation order, the cut off depends on the system that we want to described. Here, the idea is to analyze the interaction between a test particle and a gravitational source due to effects different from the Newtonian spherical influence. The first term that induces a perturbation to the newtonian case, will give the cut off of the expansion.\\
 
 The Lagrangian of a test particle of proper mass $m_0$ and proper time $\tau$ is
 \begin{equation}
@@ -268,9 +268,7 @@ Replacing the metric up to second order, given in (\ref{eq:metrictensorsecondord
  L = -m_0c^{\hspace{0.05cm}2} +\frac{1}{2}m_0v^{\hspace{0.05cm}2}+m_0\phi + \mathcal{O}(\epsilon^{3}).
 \end{equation}
 
-This Lagrangian shows only the newtonian case, therefore the metric until second order is not enough for the analysis and
-
-higher perturbative orders are needed. The metric, up to second order, corresponds to the zero Post-Newtonian approximation, up to fourth order corresponds to first Post-Newtonian approximation and so on. The correct perturbative order for each term of the metric is given in the Table (\ref{tab:tablePNorders}).\\
+This Lagrangian shows only the newtonian case, therefore the metric until second order is not enough for the analysis and higher perturbative orders are needed. The metric, up to second order, corresponds to the zero Post-Newtonian approximation, up to fourth order corresponds to first Post-Newtonian approximation and so on. The correct perturbative order for each term of the metric is given in the Table \ref{tab:tablePNorders}.\\
 \begin{table}[htbp]
 \centering
 \begin{tabular}{c|ccc}
@@ -415,7 +413,7 @@ Each term of $S_{\mu\nu}$ must be written with the energy momentum tensor
 \label{eq: Smntensor}
 &S_{\mu\nu}=T_{\mu\nu}-\frac{1}{2}g_{\mu\nu}T,
 \end{align}
-where T is the trace of the energy momentum tensor, given by
+where $T$ is the trace of the energy momentum tensor, given by
 \begin{align}
 &T= -^{(0)}T^{00} - ^{(2)}T^{00}+^{(2)}h_{00}T^{00}+\delta_{jk}T^{jk}+\mathcal{O}(\epsilon^4).
 \end{align}
@@ -431,7 +429,7 @@ Finally
 \end{subequations}
 
 
-Taking into account the form of $S_{\mu\nu}$ given in (\ref{eq: Smntensor}) and the order for the energy momentum tensor given in (\ref{eq: Tijused})(\ref{eq: Toiused})(\ref{eq: T00used})(\ref{eq: Tmnused}), the field equations can be written as
+Taking into account the form of $S_{\mu\nu}$ given in (\ref{eq: Smntensor}) and the order for the energy momentum tensor given in (\ref{eq: expansionenergymomentum}) the field equations can be written as
 \begin{subequations}
 \begin{align}
 ^{(2)}R_{00} &= \frac{8\pi G}{c^{\hspace{0.05cm}4}}{}^{(0)}S_{00}\\

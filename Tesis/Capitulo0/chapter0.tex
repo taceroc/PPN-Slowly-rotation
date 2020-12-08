@@ -1,13 +1,13 @@
 \chapter*{Introduction}
 Although the title of this work is very general; the principal objective of this project is to determine the orbit followed by a particle around a slowly rotating weak gravitational source. By being specific, with ``weak gravitational source'' we mean that the central body generates a weak gravitational field, therefore is not necessary to work with the general Einstein equations and the Post-Newtonian (PN) approximation is enough to determine the motion of the particle. We work up to the 1PN order. \cite{ GravityPoisson, Weinberg, Theoryandexperiments}\\
 
-In Chapter \ref{ch: celestial mechanics} we introduce the two-body problem, the perturbation theory, and the respective orbital elements for Classical Celestial Mechanics. The most relevant conclusion of this chapter is to introduce the general position in space of the orbit, determined by both the $x$, $y$, and $z$ positions, and the time-dependent basis; finally, we give the derivative with respect to the true anomaly of the orbital elements. Continuing with the Linearized theory in Chapter \ref{ch: firstchapter} in which we introduce the principal characteristics of a gravitational source that can be considered as a weak field and some relevant aspects of the Energy-Momentum Tensor of a system modeled as a perfect fluid. Since we are working with a weak field, the metric is introduced as a perturbation to the Minkowski metric, and the small parameter that gives the order of expansion of the metric is also introduce. We write the Einstein Field Equations under this approximation and determine the potentials involved in these, in terms of the Energy-Momentum Tensor. The metric is expanded in terms of the potentials, and these are written in terms of the expanded Energy Momentum Tensor; all the expression are written considering the Standard Post-Newtonian gauge.\cite{GravityPoisson} \\
+In Chapter \ref{ch: celestial mechanics} we introduce the two-body problem, the perturbation theory, and the respective orbital elements for Classical Celestial Mechanics. The most relevant conclusion of this chapter is to introduce the general position in space of the orbit, determined by both the $x$, $y$, and $z$ positions, and the time-dependent basis; finally, we give the derivative with respect to the true anomaly of the orbital elements. Continuing with the Linearized theory in Chapter \ref{ch: firstchapter} in which we introduce the principal characteristics of a gravitational source that can be considered as a weak field and some relevant aspects of the Energy-Momentum Tensor of a system modeled as a perfect fluid. Since we are working with a weak field, the metric is introduced as a perturbation to the Minkowski metric, and the small parameter that gives the order of expansion of the metric is also introduce. We write the Einstein Field Equations under this approximation and determine the potentials involved in these, in terms of the Energy-Momentum Tensor. The metric is expanded in terms of the potentials, and these are written in terms of the expanded Energy-Momentum Tensor; all the expression are written considering the Standard Post-Newtonian gauge.\cite{GravityPoisson} \\
 
 The problem of one body following, the Schwarzschild metric, is developed in Chapter \ref{ch:chapter2}. We introduce the general form of the Lagrangian, the equations of motion under 1PN approximation and the concept of parametrize metric. The respective perturbing force and orbital elements are calculated.\\
 
-The previous chapters have the purpose of introducing and provide enough resources to develop the main objective of the work. In Chapter \ref{ch: rotation} er introduce some relevant aspects of the Kerr Metric \cite{Bambi, Frolov, Raine} and the Weyl Levi Civita Metric \cite{johnandcoulter}, with the latter determines the Newtonian potential for a non-spherically symmetric and axially symmetric body until quadrupole moment. Then we deduce the same potential but following the classical approach to determine the form of the quadrupole moment in terms of the inertia moments \cite{Goldstain, GravityPoisson}. The potentials needed to write the Post-Newtonian metric of this system are calculated considering a slowly rotating body; therefore, we only consider the first order of quadrupole moment and rotational velocity. The metric is parametrized following the one showed in \cite{Brumberg}. We construct the perturbing force and its respective projections on the time dependent basis. The force is divided into four different types of contributions: the one corresponding to the Newtonian quadrupole, the Schwarzschild perturbation, the one due to the rotation of the central body, and the relativistic quadrupole perturbation \cite{Brumberg}. The final part of this chapter consists in calculate the secular changes of the orbital elements. The secular changes corresponding to the Newtonian quadrupole correspond to the ones showed in the literature.\\
+The previous chapters have the purpose of introducing and provide enough resources to develop the main objective of the work. In Chapter \ref{ch: rotation} we introduce some relevant aspects of the Kerr Metric \cite{Bambi, Frolov, Raine} and the Weyl Levi Civita Metric \cite{johnandcoulter}, with the latter determines the Newtonian potential for a non-spherically symmetric and axially symmetric body until quadrupole moment. Then we deduce the same potential but following the classical approach to determine the form of the quadrupole moment in terms of the inertia moments \cite{Goldstain, GravityPoisson}. The potentials needed to write the Post-Newtonian metric of this system are calculated considering a slowly rotating body; therefore, we only consider the first order of quadrupole moment and rotational velocity. The metric is parametrized following the one showed in \cite{Brumberg}. We construct the perturbing force and its respective projections on the time dependent basis. The force is divided into four different types of contributions: the one corresponding to the Newtonian quadrupole, the Schwarzschild perturbation, the one due to the rotation of the central body, and the relativistic quadrupole perturbation \cite{Brumberg}. The final part of this chapter consists in calculate the secular changes of the orbital elements. The secular changes corresponding to the Newtonian quadrupole correspond to the ones showed in the literature \cite{Sergeiclassical}.\\
 
-The project is concluded by showing, in the last Chapter, how  the secular changes determine in the previous chapter, are applied to the system Earth + Satellite in two of the most famous types of orbit, the Geostationary and the Molniya. We plot the changes in terms of the orbital period and the 3D orbit for different angles of view.\\
+The project is concluded by showing, in the last Chapter, how  the secular changes determine in the previous chapter, are applied to the system Earth + Satellite in two of the most famous types of orbit, the Geostationary and the Molniya \cite{Sergeiclassical, satellitehandbook}. We plot the changes in terms of the orbital period and the 3D orbit for different angles of view.\\
 
 Some of the algebraic steps were made using Mathematica, the plots in Chapter \ref{ch: applications} were made using Python via a Jupyter Notebook. These computational resources, as well as the \LaTeX  \hspace{0.2cm} documents, can be found in \url{https://github.com/taceroc/PPN-Slowly-rotation.git}.
 
@@ -18,7 +18,7 @@ Some of the algebraic steps were made using Mathematica, the plots in Chapter \r
 
 \section{Two Body Problem}
 
-A two body system, as in Figure \ref{fig: twobodysystem}, can be described following the Newtonian formalism. This system is characterized by the newtonian potential,
+A two body system, as in Figure \ref{fig: twobodysystem}, can be described following the Newtonian formalism. This system is characterized by the Newtonian potential,
 \begin{align}
 	\phi (r) = -\frac{GM}{r},
 \end{align}
@@ -74,7 +74,7 @@ p = a(1-e^2) = \frac{\ell^2}{GM},
 where $a$ is a constant of integration, corresponding to the semi-major axis.
 
 \section{Orbital elements}
-A a general description of the motion of the system can be done by considering a coordinates $(x,y,z)$, where the orbit is not longer defined in the $\mathcal{X}\mathcal{Y}$ plane. The orbit is completely defined by knowing the six orbital elements:
+A general description of the motion of the system can be done by considering a coordinates $(x,y,z)$, where the orbit is not longer defined in the $\mathcal{X}\mathcal{Y}$ plane. The orbit is completely defined by knowing the six orbital elements:
 \begin{enumerate}\bfseries
 \color{forestgreen}
 \item  a: semi-major axis,
@@ -92,7 +92,7 @@ A a general description of the motion of the system can be done by considering a
 \label{fig: orbitalelementsdibujo}
 \end{figure}
 
-The semi-major axis and eccentricity described the geometry of the orbit. For elliptical orbits, the eccentricity has values between $0$ and $1$. $\omega$, $\iota$ and $\Omega$ describe the position of the orbit in the general system and a constant related to time.\\
+The semi-major axis and eccentricity describe the geometry of the orbit. For elliptical orbits, the eccentricity has values between $0$ and $1$. $\omega$, $\iota$ and $\Omega$ describe the position of the orbit in the general system and a constant related to time.\\
 
 The procedure to determine the connection between the $\mathcal{X}\mathcal{Y}$ and the general coordinates $xyz$ is applying the following rotations:
 
@@ -273,7 +273,7 @@ The eccentricity can be found via the Laplace - Runge -Lenz vector, defined as
 
 \section{Perturbation Theory}
 
- For the two body system, the orbital elements are constant over time. Introducing a perturbation to the system, such a third body, relativistic, quadrupole effects, etc., the elements are now dependent of time. A perturbing force, smaller than the newtonian force, must be added to the force given by the two body system in (\ref{eq: newtonianeqmotion}) [\cite{Brumberg, Sergeiclassical}],
+ For the two body system, the orbital elements are constant over time. Introducing a perturbation to the system, such a third body, relativistic, quadrupole effects, etc., the elements are now dependent of time. A perturbing force, smaller than the newtonian force, must be added to the force given by the two body system in (\ref{eq: newtonianeqmotion}) \cite{Brumberg, Sergeiclassical},
 \begin{align}
 	\ddot{\mathbf{x}} = -\frac{GM}{r^2} \mathbf{n} + \mathbf{F}.
 \end{align}
@@ -283,7 +283,7 @@ The force can be decomposed in terms of the time dependent basis as
 	\mathbf{F} = \mathcal{R} \mathbf{n} + \mathcal{T} \boldsymbol{\lambda}+ \mathcal{W}\mathbf{k}.
 \end{align}
 
-The first order correction to the orbital elements in terms of, the true anomaly are \cite{Brumberg, Larranaga}
+The first order correction to the orbital elements in terms of the true anomaly are \cite{Brumberg, Larranaga}
 
 \begin{subequations}\label{eq:OsculatingOrbitalElementsinf}
 \begin{align}
@@ -298,7 +298,7 @@ The first order correction to the orbital elements in terms of, the true anomaly
 
 These derivatives can be written in terms of the coordinate time $t$, as shown in Chapter \ref{ch:chapter2}.\\
 
-The changes in the orbital elements allow us to describe the orbit in which the system is moving. However, some of these changes are periodic, meaning that they average to zero after some period of time. On the other hand, other changes are not periodic, so they accumulate after each revolution and can produce considerable changes in the motion of the particles. These non-periodic contributions are called secular changes, and can be found by integrating over time, or over the true anomaly,
+The changes in the orbital elements allow us to describe the orbit in which the system is moving. However, some of these changes are periodic, meaning that they average to zero after some period of time. On the other hand, other changes are not periodic, so they accumulate after each revolution and can produce considerable changes in the motion of the particles. These non-periodic contributions are called secular changes, and can be found by integrating over time, or over the true anomaly the expression (\ref{eq:OsculatingOrbitalElementsinf}),
 \begin{align}\label{eq: secularchanges}
 \Delta \vartheta = \int_0^{2\pi} \frac{d \vartheta}{df}df.
 \end{align}

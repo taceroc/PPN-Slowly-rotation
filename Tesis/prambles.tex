@@ -1,0 +1,239 @@
+\documentclass[12pt, letterpaper]{article}
+\usepackage[table]{xcolor}
+\setlength\parindent{0pt}% indent width
+\usepackage[utf8]{inputenc} %paquete que permite colocar acentos
+%\usepackage{helvet} 
+%\usepackage{lmodern}
+%\usepackage{tgbonum}
+\usepackage{libertinus} %megusta
+%\usepackage{fouriernc}
+%\usepackage[light]{CrimsonPro}
+%\renewcommand{\familydefault}{\sfdefault} % Fuente en Arial
+\definecolor{greenn}{HTML}{008000}
+\usepackage{hyperref}
+\usepackage{dirtytalk}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+    citecolor=greenn
+}
+\usepackage[english]{babel} 
+\usepackage{textgreek}
+\usepackage{upgreek}
+\usepackage{etoolbox}
+\usepackage{amsmath}
+\usepackage[customcolors,shade]{hf-tikz}
+\usepackage{empheq}
+\usepackage{tablefootnote}
+\usepackage{dcolumn,tabularx,ragged2e}
+\usepackage{breqn}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{float}
+\usepackage{grffile}
+\usepackage{tabularx}
+\usepackage{siunitx}
+\usepackage{amssymb}
+\usepackage{lineno}
+\usepackage{physics}
+\usepackage{multirow}
+\usepackage{subfigure} 
+\usepackage{color}
+\usepackage{xfrac}
+\usepackage{multicol}
+%\usepackage{titleps}
+\usepackage{lipsum}
+\usepackage{cancel}
+\usepackage{sectsty}
+\font\myfont=cmr12 at 90pt
+\usepackage{enumerate}
+\numberwithin{equation}{chapter}
+\usepackage[nottoc]{tocbibind}
+\usepackage{titletoc}
+\titlecontents{chapter}% <section-type>
+  [0pt]% <left>
+  {}% <above-code>
+  {\bfseries\chaptername\ \thecontentslabel\quad}% <numbered-entry-format>
+  {}% <numberless-entry-format>
+  {\bfseries\hfill\contentspage}% <filler-page-format>
+\setcounter{tocdepth}{1}
+
+
+\usepackage{titlesec}
+\titleformat*{\section}{\Huge\bfseries}
+\titleformat*{\subsection}{\Large\bfseries}
+
+%\usepackage[margin=0.8cm]{caption}
+
+\usepackage[table]{xcolor}
+\usepackage{xcolor,colortbl}
+
+\newcommand\crule[3][black]{\textcolor{#1}{\rule{#2}{#3}}}
+
+\definecolor{color0cc}{HTML}{735244}
+\definecolor{color1cc}{HTML}{c29682}
+\definecolor{color2cc}{HTML}{627a9d}
+\definecolor{color3cc}{HTML}{576c43}
+\definecolor{color4cc}{HTML}{8580b1}
+\definecolor{color5cc}{HTML}{67bdaa}
+\definecolor{color6cc}{HTML}{d67e2c}
+\definecolor{color7cc}{HTML}{505ba6}
+\definecolor{color8cc}{HTML}{c15a63}
+\definecolor{color9cc}{HTML}{5e3c6c}
+\definecolor{color10cc}{HTML}{9dbc40}
+\definecolor{color11cc}{HTML}{e0a32e}
+\definecolor{color12cc}{HTML}{383d96}
+\definecolor{color13cc}{HTML}{469449}
+\definecolor{color14cc}{HTML}{af363c}
+\definecolor{color15cc}{HTML}{e7c71f}
+\definecolor{color16cc}{HTML}{bb5695}
+\definecolor{color17cc}{HTML}{0885a1}
+\definecolor{color18cc}{HTML}{f3f3f2}
+\definecolor{color19cc}{HTML}{c8c8c8}
+\definecolor{color20cc}{HTML}{a0a0a0}
+\definecolor{color21cc}{HTML}{7a7a79}
+\definecolor{color22cc}{HTML}{555555}
+\definecolor{color23cc}{HTML}{343434}
+
+
+\definecolor{color0n}{HTML}{7C4B41}
+\definecolor{color1n}{HTML}{AEAEB0}
+\definecolor{color2n}{HTML}{8A97AD}
+\definecolor{color3n}{HTML}{737F45}
+\definecolor{color4n}{HTML}{A1A4B4}
+\definecolor{color5n}{HTML}{AAB4B8}
+\definecolor{color6n}{HTML}{B28206}
+\definecolor{color7n}{HTML}{425390}
+\definecolor{color8n}{HTML}{9B5F71}
+\definecolor{color9n}{HTML}{471C5C}
+\definecolor{color10n}{HTML}{A8B08D}
+\definecolor{color11n}{HTML}{B29F2A}
+\definecolor{color12n}{HTML}{022981}
+\definecolor{color13n}{HTML}{65934F}
+\definecolor{color14n}{HTML}{91333A}
+\definecolor{color15n}{HTML}{B3B15F}
+\definecolor{color16n}{HTML}{9C6D96}
+\definecolor{color17n}{HTML}{5C94B3}
+\definecolor{color18n}{HTML}{B3B9BA}
+\definecolor{color19n}{HTML}{B2B7B9}
+\definecolor{color20n}{HTML}{B4B8BA}
+\definecolor{color21n}{HTML}{A3A7AA}
+\definecolor{color22n}{HTML}{4E5361}
+\definecolor{color23n}{HTML}{2C333F}
+
+\definecolor{color0h}{HTML}{835F5F}
+\definecolor{color1h}{HTML}{A39D99}
+\definecolor{color2h}{HTML}{838A94}
+\definecolor{color3h}{HTML}{6E7058}
+\definecolor{color4h}{HTML}{969599}
+\definecolor{color5h}{HTML}{A4A7A5}
+\definecolor{color6h}{HTML}{A67641}
+\definecolor{color7h}{HTML}{495276}
+\definecolor{color8h}{HTML}{8B525C}
+\definecolor{color9h}{HTML}{49324B}
+\definecolor{color10h}{HTML}{95926F}
+\definecolor{color11h}{HTML}{A18747}
+\definecolor{color12h}{HTML}{384977}
+\definecolor{color13h}{HTML}{5E7741}
+\definecolor{color14h}{HTML}{7C282D}
+\definecolor{color15h}{HTML}{918643}
+\definecolor{color16h}{HTML}{875970}
+\definecolor{color17h}{HTML}{618696}
+\definecolor{color18h}{HTML}{B1AEA6}
+\definecolor{color19h}{HTML}{9D9A91}
+\definecolor{color20h}{HTML}{908D85}
+\definecolor{color21h}{HTML}{7D7872}
+\definecolor{color22h}{HTML}{3C393D}
+\definecolor{color23h}{HTML}{363D41}
+
+
+\definecolor{color0d}{HTML}{B16243}
+\definecolor{color1d}{HTML}{F6D1CB}
+\definecolor{color2d}{HTML}{97B5DC}
+\definecolor{color3d}{HTML}{668E09}
+\definecolor{color4d}{HTML}{C6C5E8}
+\definecolor{color5d}{HTML}{BDEFE9}
+\definecolor{color6d}{HTML}{FF8E0D}
+\definecolor{color7d}{HTML}{7184E3}
+\definecolor{color8d}{HTML}{FF798C}
+\definecolor{color9d}{HTML}{660979}
+\definecolor{color10d}{HTML}{C2F046}
+\definecolor{color11d}{HTML}{FFBE00}
+\definecolor{color12d}{HTML}{012DCE}
+\definecolor{color13d}{HTML}{0BDC65}
+\definecolor{color14d}{HTML}{FA051A}
+\definecolor{color15d}{HTML}{FFE500}
+\definecolor{color16d}{HTML}{FF8BD2}
+\definecolor{color17d}{HTML}{2CC2EB}
+\definecolor{color18d}{HTML}{F9F9F9}
+\definecolor{color19d}{HTML}{F0F0F0}
+\definecolor{color20d}{HTML}{DFDFDF}
+\definecolor{color21d}{HTML}{B6B2B3}
+\definecolor{color22d}{HTML}{605E63}
+\definecolor{color23d}{HTML}{060408}
+
+
+\newcommand{\vect}[1]{\boldsymbol{#1}}
+
+\newcommand{\subf}[2]{%
+  {\small\begin{tabular}[t]{@{}c@{}}
+  #1\\#2
+  \end{tabular}}%
+}
+
+%\renewpagestyle{plain}{%
+%\sethead{}{}{}
+%\setfoot{}{\thepage}{}
+%}%
+
+%\pagestyle{plain}
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}%tamaño márgenes
+\usepackage{lmodern}
+\renewcommand{\baselinestretch}{1} %interlineado
+\usepackage[small]{caption}  
+\usepackage[tablename=Tabla]{caption}
+\usepackage[figurename=Figura]{caption}%Nombre de las figuras o tablas
+%\usepackage{subcaption}
+
+\definecolor{forestgreen}{rgb}{0.0, 0.67, 0.13}
+\definecolor{amber(sae/ece)}{rgb}{1.0, 0.49, 0.0}
+\definecolor{cadmiumorange}{rgb}{1.0, 0.53, 0.3}
+\definecolor{morado}{rgb}{0.7, 0.4, 1.0}
+\definecolor{black}{rgb}{0.0, 0.0, 0.0}
+
+%-------Título----------------
+% \title{\Huge \protect\vspace{-3cm}\protect{
+% \textbf{Caracterización de cámaras fotográficas}}\\
+% \LARGE{\textbf{Informe técnico}}}
+% \author{Tatiana Acero Cuellar, Maria Camila Díaz Sanchez, Julio Florez Macias, \\
+% Juan David Hernández Pineda, Julietta Sophia Mendivelso Rodríguez,\\
+% Juan Sebastian Ordoñez Soto, Karen Julieth Peréz Bohorquez,\\
+%  Manuel Sebastián Torres Hernández\\
+% \small{Universidad Nacional de Colombia}\\
+% \small{Mediciones de Óptica y Acústica, Departamento de Física, Facultad de Ciencias}}
+% \date{7 de Junio del 2020} %ingresar la fecha o simplemente borrar los "{}"
+
+
+
+
+% \begin{abstract} 
+% \noindent En este documento se presenta una descripción detallada de los equipos que van a ser usadas para la caracterización de las cámaras fotográficas, al igual que una guía específica para cada uno de los aspectos con las cuales serán discriminadas - sensor de imagen, colorimetría, propiedades ópticas - que describe en detalle los montajes que serán usados además de las mediciones propuestas para cada una de ellas.
+% \end{abstract}
+% \begin{center}\rule{0.9\textwidth}{0.1mm} \end{center}
+
+
+
+
+
+
+    
+
+
+
+
+
+

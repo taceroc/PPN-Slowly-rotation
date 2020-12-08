@@ -1,7 +1,7 @@
 \chapter{Static One Body Problem}\label{ch:chapter2}
 
 
-The metric given in (\ref{eq:finalmetricpn}) is the general form of the Post-Newtonian metric, nevertheless a even more general metric is desired. The called Parametrized Post - Newtonian (PPN) is written in terms of a set of parameters can describe more than one theory. \\
+The metric given in (\ref{eq:finalmetricpn}) is the general form of the Post-Newtonian metric, nevertheless a even more general metric is desired. The metric, called Parametrized Post-Newtonian (PPN), is written in terms of a set of parameters that can describe more than one theory. \\
 
 The final purpose of this Chapter is to construct and determine the equation of motions for one static body system. The field produced by this body must meet with the conditions of a weak field, introduced in the Chapter \ref{ch: firstchapter}. For the construction of these equations, the PPN metric is used.\\
 
@@ -167,7 +167,7 @@ L &= \frac{1}{2} m_0 \dot{\mathbf{x}}^2 +  GM \kappa \frac{m_0}{r}+ \frac{1}{8} 
 \end{split}
 \end{align}
 
-and the equations of motion
+gives the equations of motion
 \begin{align*}
 \begin{split}
 \ddot{x}^j + \frac{\kappa GM}{r^3}x^j &= \frac{m}{r^3}\left[2(\beta + \kappa \gamma - \alpha)\frac{GM}{r}-(\gamma+\alpha)\dot{x}_k\dot{x}^k+ 3\alpha\frac{\left(x_k\dot{x}^k\right)^2}{r^2}\right]x^j\\
@@ -188,9 +188,9 @@ In vector notation, these are
 
 To determine the conserved quantities, transform to polar coordinates
 \begin{align*}
-&\mathbf{x} =\mathbf{r} = r\hat{n}\\
-&\dot{\mathbf{x}}=\dot{\mathbf{r}} = \dot{r}\hat{n}+r\dot{\phi}\hat{\lambda}\\
-&\ddot{\mathbf{x}}=\ddot{\mathbf{r}} = (\ddot{r}-r\dot{\phi}^2)\hat{n}+\frac{1}{r}\frac{d}{dt}(r^2\dot{\phi})\hat{\lambda}.
+&\mathbf{x} =\mathbf{r} = r\mathbf{n}\\
+&\dot{\mathbf{x}}=\dot{\mathbf{r}} = \dot{r}\mathbf{n}+r\dot{\phi}\boldsymbol{\lambda}\\
+&\ddot{\mathbf{x}}=\ddot{\mathbf{r}} = (\ddot{r}-r\dot{\phi}^2)\mathbf{n}+\frac{1}{r}\frac{d}{dt}(r^2\dot{\phi})\boldsymbol{\lambda}.
 \end{align*}
 The Lagrangian is now written as
 \begin{align}
@@ -444,7 +444,7 @@ and $g$ to find the energy,
 Now, considering the conic equation
 \begin{align}
 	&u(\phi) = \frac{1+e\cos f}{a(1-e^2)}\\
-	&f=f(\phi) = \phi - \omega \hspace{0.5cm} \text{(See Figure (\ref{fig: elementosorbitales}))},
+	&f=f(\phi) = \phi - \omega,
 \end{align}
 where $f$ is the true anomaly and $\omega$ is the longitude of the pericenter.\\
 
@@ -551,21 +551,12 @@ The perturbative force is $\mathbf{F}$
 \end{split}
 \end{align}
 
-This force can be written as
+This force can be written as (\ref{eq: timedependentbasisnopertur})
 \begin{align}
 \mathbf{F} = \mathcal{R} \mathbf{n}+\mathcal{T}\boldsymbol{\lambda}+\mathcal{W}\mathbf{k}
 \end{align}
-with
-\begin{subequations}
-\begin{align}
-&\mathbf{n} = \frac{\mathbf{x}}{x}\\
-&\boldsymbol{\lambda}  = \frac{d\mathbf{n} }{d\phi} \\
-&\mathbf{k}  = \mathbf{n} \times \boldsymbol{\lambda}.
-\end{align}
-\end{subequations}
 
 Each coefficient is
-
 \begin{align}\label{eq: componetsperturbingforce}
 \mathcal{R} = \mathbf{F} \cdot \mathbf{n}, \hspace{0.5cm} \mathcal{T} = \mathbf{F} \cdot \boldsymbol{\lambda}, \hspace{0.5cm}
 \mathcal{W} = \mathbf{F} \cdot \mathbf{k}

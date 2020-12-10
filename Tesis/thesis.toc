@@ -1,40 +1,41 @@
 \babel@toc {english}{}
-\contentsline {chapter}{\textbf {Introduction}}{1}{chapter*.1}%
-\contentsline {chapter}{\numberline {1}Celestial Mechanics}{4}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Two Body Problem}{4}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Orbital elements}{6}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Perturbation Theory}{8}{section.1.3}%
-\contentsline {chapter}{\numberline {2}Linearized gravity }{10}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Weak fields}{10}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Linearized theory}{11}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Metric tensor of the linearized Field equations: First Post Newtonian Metric}{13}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}The solution of the Einstein field equations up to first Post-Newtonian approximation}{16}{subsection.2.2.2}%
-\contentsline {chapter}{\numberline {3}Static One Body Problem}{22}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Parametrized Metric}{22}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Lagrangian and equations of motion}{25}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Conserved quantities}{26}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Trajectory equation}{27}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Circular motion}{29}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Elliptic motion}{29}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Perturbing Force}{33}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.4.4}Orbital elements}{34}{subsection.3.4.4}%
-\contentsline {chapter}{\numberline {4}Stationary One Body Problem}{35}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Metric of slowly rotating spheroid}{35}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Kerr metric}{35}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Weyl Levi Civita metric}{40}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Newtonian Quadrupole Moment}{41}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4}Vector potential}{45}{subsection.4.1.4}%
-\contentsline {subsection}{\numberline {4.1.5}Potential $\psi $}{46}{subsection.4.1.5}%
-\contentsline {subsection}{\numberline {4.1.6}Parametrized Metric}{48}{subsection.4.1.6}%
-\contentsline {section}{\numberline {4.2}Construction of the Perturbing Force}{49}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Lagrangian}{49}{subsection.4.2.1}%
-\contentsline {section}{\numberline {4.3}Perturbing Force}{50}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Components of the perturbing force}{58}{subsection.4.3.1}%
-\contentsline {section}{\numberline {4.4}Osculating Elements}{60}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Applications}{62}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Artificial Satellites}{62}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Geostationary Orbit}{63}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Molniya Orbit}{68}{subsection.5.1.2}%
-\contentsline {section}{\numberline {5.2}Conclusions}{74}{section.5.2}%
-\contentsline {chapter}{Bibliography}{75}{chapter*.28}%
+\contentsline {chapter}{\textbf {Resumen}}{2}{chapter*.2}%
+\contentsline {chapter}{\textbf {Introduction}}{4}{chapter*.4}%
+\contentsline {chapter}{\numberline {1}Celestial Mechanics}{6}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Two Body Problem}{6}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Orbital elements}{8}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Perturbation Theory}{10}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Linearized gravity }{12}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Weak fields}{12}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Linearized theory}{13}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Metric tensor of the linearized Field equations: First Post Newtonian Metric}{15}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}The solution of the Einstein field equations up to first Post-Newtonian approximation}{18}{subsection.2.2.2}%
+\contentsline {chapter}{\numberline {3}Static One Body Problem}{24}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Parametrized Metric}{24}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Lagrangian and equations of motion}{27}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Conserved quantities}{28}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Trajectory equation}{29}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Circular motion}{31}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Elliptic motion}{31}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Perturbing Force}{35}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}Orbital elements}{36}{subsection.3.4.4}%
+\contentsline {chapter}{\numberline {4}Stationary One Body Problem}{37}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Metric of slowly rotating spheroid}{37}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Kerr metric}{37}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Weyl Levi Civita metric}{42}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Newtonian Quadrupole Moment}{43}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Vector potential}{47}{subsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.1.5}Potential $\psi $}{48}{subsection.4.1.5}%
+\contentsline {subsection}{\numberline {4.1.6}Parametrized Metric}{50}{subsection.4.1.6}%
+\contentsline {section}{\numberline {4.2}Construction of the Perturbing Force}{51}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Lagrangian}{51}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.3}Perturbing Force}{52}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Components of the perturbing force}{60}{subsection.4.3.1}%
+\contentsline {section}{\numberline {4.4}Osculating Elements}{62}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Applications}{64}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Artificial Satellites}{64}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Geostationary Orbit}{65}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Molniya Orbit}{70}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Conclusions}{76}{section.5.2}%
+\contentsline {chapter}{Bibliography}{77}{chapter*.30}%
 \contentsfinish 
